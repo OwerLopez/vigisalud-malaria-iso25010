@@ -1,0 +1,176 @@
+{
+ "base": "https://vigisalud-malaria.vercel.app",
+ "fecha": "2026-10-27T11:45:47.694Z",
+ "SE01": {
+  "archivos": [
+   {
+    "archivo": "malaria.json",
+    "claves": [
+     "meta",
+     "fuente",
+     "url",
+     "licencia",
+     "fecha_descarga",
+     "anios",
+     "ultima_semana",
+     "anio_nominal_desde",
+     "grupos_edad",
+     "anual",
+     "departamentos",
+     "dep_anual",
+     "AMAZONAS",
+     "ANCASH",
+     "APURIMAC",
+     "AREQUIPA",
+     "AYACUCHO",
+     "CAJAMARCA",
+     "CUSCO",
+     "HUANCAVELICA",
+     "HUANUCO",
+     "ICA",
+     "JUNIN",
+     "LA LIBERTAD",
+     "LAMBAYEQUE",
+     "LIMA",
+     "LORETO",
+     "MADRE DE DIOS",
+     "MOQUEGUA",
+     "PASCO",
+     "PIURA",
+     "PUNO",
+     "SAN MARTIN",
+     "TUMBES",
+     "UCAYALI",
+     "semanal",
+     "f",
+     "v",
+     "PERU",
+     "distritos"
+    ],
+    "campos_prohibidos": [],
+    "ok": true
+   },
+   {
+    "archivo": "calidad_datos.json",
+    "claves": [
+     "fecha_proceso",
+     "archivos",
+     "archivo",
+     "periodo",
+     "granularidad",
+     "columnas",
+     "filas",
+     "filas_invalidas",
+     "casos",
+     "nulos",
+     "departamento",
+     "provincia",
+     "distrito",
+     "sha256",
+     "bytes",
+     "motivos_invalidez",
+     "edad_fuera_de_rango",
+     "localidad",
+     "localcod",
+     "tipo_edad",
+     "A",
+     "M",
+     "D",
+     "ultima_semana_por_anio",
+     "departamento_recuperado_por_ubigeo",
+     "total_casos",
+     "regla_publicacion"
+    ],
+    "campos_prohibidos": [],
+    "ok": true
+   },
+   {
+    "archivo": "departamentos.geojson",
+    "claves": [
+     "type",
+     "crs",
+     "properties",
+     "name",
+     "features",
+     "NOMBDEP",
+     "COUNT",
+     "FIRST_IDDP",
+     "HECTARES",
+     "geometry",
+     "coordinates"
+    ],
+    "campos_prohibidos": [],
+    "ok": true
+   }
+  ],
+  "A": 3,
+  "B": 3
+ },
+ "SE02": {
+  "controles": [
+   {
+    "control": "SHA-256 datos_abiertos_vigilancia_malaria_2000_2008.csv",
+    "publicado": "749d8897e94255d09caa745dbd91c2dd3710f0453199a65654731f6ef97efdd0",
+    "calculado": "749d8897e94255d09caa745dbd91c2dd3710f0453199a65654731f6ef97efdd0",
+    "ok": true
+   },
+   {
+    "control": "SHA-256 datos_abiertos_vigilancia_malaria_2009_2025.csv",
+    "publicado": "084ef118bd67753db8785b23b3e78db15f61034e4fa3d3a2668896b779fd2232",
+    "calculado": "084ef118bd67753db8785b23b3e78db15f61034e4fa3d3a2668896b779fd2232",
+    "ok": true
+   },
+   {
+    "control": "HTTP redirige a HTTPS",
+    "estado": 308,
+    "destino": "https://vigisalud-malaria.vercel.app/",
+    "ok": true
+   }
+  ],
+  "A": 3,
+  "B": 3
+ },
+ "SE03": {
+  "cabeceras": [
+   {
+    "nombre": "Content-Security-Policy",
+    "ok": true,
+    "valor": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+   },
+   {
+    "nombre": "Strict-Transport-Security",
+    "ok": true,
+    "valor": "max-age=63072000; includeSubDomains; preload"
+   },
+   {
+    "nombre": "X-Content-Type-Options",
+    "ok": true,
+    "valor": "nosniff"
+   },
+   {
+    "nombre": "X-Frame-Options / frame-ancestors",
+    "ok": true,
+    "valor": "DENY"
+   },
+   {
+    "nombre": "Referrer-Policy",
+    "ok": true,
+    "valor": "strict-origin-when-cross-origin"
+   },
+   {
+    "nombre": "Permissions-Policy",
+    "ok": true,
+    "valor": "camera=(), microphone=(), geolocation=(), payment=()"
+   },
+   {
+    "nombre": "Cross-Origin-Opener-Policy",
+    "ok": true,
+    "valor": "same-origin"
+   }
+  ],
+  "A": 7,
+  "B": 7,
+  "scripts_de_terceros": [],
+  "scripts_en_linea": 0
+ }
+}

@@ -1,0 +1,48 @@
+[
+ {
+  "escenario": {
+   "anio": "2025",
+   "dep": "PERU"
+  },
+  "formato": "CSV",
+  "filas": 101,
+  "suma": 33516,
+  "interfaz": 33516,
+  "ok": true,
+  "hora": "2026-10-27T12:17:09.864Z"
+ },
+ {
+  "escenario": {
+   "anio": "2025",
+   "dep": "PERU"
+  },
+  "formato": "JSON",
+  "suma": 33516,
+  "interfaz": 33516,
+  "ok": true,
+  "hora": "2026-10-27T12:17:09.943Z"
+ },
+ {
+  "escenario": {
+   "anio": "2014",
+   "dep": "LORETO"
+  },
+  "formato": "CSV",
+  "filas": 49,
+  "suma": 61092,
+  "interfaz": 61092,
+  "ok": true,
+  "hora": "2026-10-27T12:17:10.289Z"
+ },
+ {
+  "escenario": {
+   "anio": "2014",
+   "dep": "LORETO"
+  },
+  "formato": "JSON",
+  "suma": 61092,
+  "interfaz": 61092,
+  "ok": true,
+  "hora": "2026-10-27T12:17:10.387Z"
+ }
+]

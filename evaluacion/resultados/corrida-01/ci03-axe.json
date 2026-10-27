@@ -1,0 +1,26 @@
+[
+ {
+  "vista": "tablero-calidad",
+  "reglas_evaluadas": 26,
+  "violaciones": [
+   {
+    "id": "label-content-name-mismatch",
+    "impacto": "serious",
+    "nodos": 1,
+    "ayuda": "Elements must have their visible text as part of their accessible name"
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impacto": "serious",
+    "nodos": 1,
+    "ayuda": "Scrollable region must have keyboard access"
+   }
+  ],
+  "por_impacto": {
+   "serious": 2
+  },
+  "graves": 2,
+  "ok": false,
+  "hora": "2026-10-27T05:10:25.293Z"
+ }
+]

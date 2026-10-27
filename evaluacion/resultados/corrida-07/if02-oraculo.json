@@ -1,0 +1,674 @@
+[
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "casos",
+  "esperado": 33516,
+  "obtenido": 33516,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.567Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "variacion_pct",
+  "esperado": -1.1,
+  "obtenido": -1.1,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.592Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "caso_anio_previo",
+  "esperado": 33892,
+  "obtenido": 33892,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.594Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "pf_pct",
+  "esperado": 15.4,
+  "obtenido": 15.4,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.616Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "lider_casos",
+  "esperado": 33176,
+  "obtenido": 33176,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.638Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "pico_semana",
+  "esperado": 27,
+  "obtenido": 27,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.662Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "pico_casos",
+  "esperado": 1072,
+  "obtenido": 1072,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.663Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "semanas_con_casos",
+  "esperado": 53,
+  "obtenido": 53,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.664Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "distritos_con_casos",
+  "esperado": 101,
+  "obtenido": 101,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.678Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "mujeres",
+  "esperado": 15107,
+  "obtenido": 15107,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.700Z"
+ },
+ {
+  "escenario": "2025-PERU-todas",
+  "campo": "hombres",
+  "esperado": 18409,
+  "obtenido": 18409,
+  "ok": true,
+  "hora": "2026-10-27T11:56:21.702Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "casos",
+  "esperado": 27756,
+  "obtenido": 27756,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.691Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "variacion_pct",
+  "esperado": 45.5,
+  "obtenido": 45.5,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.710Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "caso_anio_previo",
+  "esperado": 19077,
+  "obtenido": 19077,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.711Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "pf_pct",
+  "esperado": 18.1,
+  "obtenido": 18.1,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.730Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "lider_casos",
+  "esperado": 26137,
+  "obtenido": 26137,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.749Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "pico_semana",
+  "esperado": 20,
+  "obtenido": 20,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.768Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "pico_casos",
+  "esperado": 960,
+  "obtenido": 960,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.770Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "semanas_con_casos",
+  "esperado": 52,
+  "obtenido": 52,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.771Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "distritos_con_casos",
+  "esperado": 88,
+  "obtenido": 88,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.781Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "mujeres",
+  "esperado": 12172,
+  "obtenido": 12172,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.802Z"
+ },
+ {
+  "escenario": "2024-PERU-vivax",
+  "campo": "hombres",
+  "esperado": 15584,
+  "obtenido": 15584,
+  "ok": true,
+  "hora": "2026-10-27T11:56:22.803Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "casos",
+  "esperado": 3481,
+  "obtenido": 3481,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.696Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "variacion_pct",
+  "esperado": -16.5,
+  "obtenido": -16.5,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.713Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "caso_anio_previo",
+  "esperado": 4170,
+  "obtenido": 4170,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.714Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "pf_pct",
+  "esperado": 15.4,
+  "obtenido": 15.4,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.733Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "lider_casos",
+  "esperado": 3455,
+  "obtenido": 3455,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.752Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "pico_semana",
+  "esperado": 29,
+  "obtenido": 29,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.769Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "pico_casos",
+  "esperado": 118,
+  "obtenido": 118,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.770Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "semanas_con_casos",
+  "esperado": 52,
+  "obtenido": 52,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.772Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "distritos_con_casos",
+  "esperado": 27,
+  "obtenido": 27,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.781Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "mujeres",
+  "esperado": 1727,
+  "obtenido": 1727,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.801Z"
+ },
+ {
+  "escenario": "2023-PERU-falciparum",
+  "campo": "hombres",
+  "esperado": 1754,
+  "obtenido": 1754,
+  "ok": true,
+  "hora": "2026-10-27T11:56:23.803Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "casos",
+  "esperado": 61092,
+  "obtenido": 61092,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.701Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "variacion_pct",
+  "esperado": 39.7,
+  "obtenido": 39.7,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.718Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "caso_anio_previo",
+  "esperado": 43739,
+  "obtenido": 43739,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.719Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "pf_pct",
+  "esperado": 17,
+  "obtenido": 17,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.737Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "lider_casos",
+  "esperado": 10693,
+  "obtenido": 10693,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.758Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "pico_semana",
+  "esperado": 27,
+  "obtenido": 27,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.779Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "pico_casos",
+  "esperado": 2283,
+  "obtenido": 2283,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.780Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "semanas_con_casos",
+  "esperado": 53,
+  "obtenido": 53,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.782Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "distritos_con_casos",
+  "esperado": 49,
+  "obtenido": 49,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.792Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "mujeres",
+  "esperado": 28256,
+  "obtenido": 28256,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.813Z"
+ },
+ {
+  "escenario": "2014-LORETO-todas",
+  "campo": "hombres",
+  "esperado": 32836,
+  "obtenido": 32836,
+  "ok": true,
+  "hora": "2026-10-27T11:56:24.814Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "casos",
+  "esperado": 1657,
+  "obtenido": 1657,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.799Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "variacion_pct",
+  "esperado": 151.4,
+  "obtenido": 151.4,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.814Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "caso_anio_previo",
+  "esperado": 659,
+  "obtenido": 659,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.816Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "pf_pct",
+  "esperado": 12.3,
+  "obtenido": 12.3,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.830Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "lider_casos",
+  "esperado": 1647,
+  "obtenido": 1647,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.847Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "pico_semana",
+  "esperado": 36,
+  "obtenido": 36,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.863Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "pico_casos",
+  "esperado": 85,
+  "obtenido": 85,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.865Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "semanas_con_casos",
+  "esperado": 52,
+  "obtenido": 52,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.866Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "distritos_con_casos",
+  "esperado": 3,
+  "obtenido": 3,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.876Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "mujeres",
+  "esperado": 793,
+  "obtenido": 793,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.894Z"
+ },
+ {
+  "escenario": "2022-AMAZONAS-todas",
+  "campo": "hombres",
+  "esperado": 864,
+  "obtenido": 864,
+  "ok": true,
+  "hora": "2026-10-27T11:56:25.896Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "casos",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.751Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "variacion_pct",
+  "esperado": null,
+  "obtenido": null,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.765Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "caso_anio_previo",
+  "esperado": null,
+  "obtenido": null,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.766Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "pf_pct",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.780Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "lider_casos",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.794Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "pico_semana",
+  "esperado": null,
+  "obtenido": null,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.808Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "pico_casos",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.810Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "semanas_con_casos",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.812Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "distritos_con_casos",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.823Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "mujeres",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.843Z"
+ },
+ {
+  "escenario": "2019-JUNIN-falciparum",
+  "campo": "hombres",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:26.845Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "casos",
+  "esperado": 87670,
+  "obtenido": 87670,
+  "ok": true,
+  "hora": "2026-10-27T11:56:27.905Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "variacion_pct",
+  "esperado": 7.2,
+  "obtenido": 7.2,
+  "ok": true,
+  "hora": "2026-10-27T11:56:27.937Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "caso_anio_previo",
+  "esperado": 81765,
+  "obtenido": 81765,
+  "ok": true,
+  "hora": "2026-10-27T11:56:27.938Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "pf_pct",
+  "esperado": 17.2,
+  "obtenido": 17.2,
+  "ok": true,
+  "hora": "2026-10-27T11:56:27.967Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "lider_casos",
+  "esperado": 54286,
+  "obtenido": 54286,
+  "ok": true,
+  "hora": "2026-10-27T11:56:27.998Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "pico_semana",
+  "esperado": 9,
+  "obtenido": 9,
+  "ok": true,
+  "hora": "2026-10-27T11:56:28.033Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "pico_casos",
+  "esperado": 2710,
+  "obtenido": 2710,
+  "ok": true,
+  "hora": "2026-10-27T11:56:28.034Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "semanas_con_casos",
+  "esperado": 52,
+  "obtenido": 52,
+  "ok": true,
+  "hora": "2026-10-27T11:56:28.035Z"
+ },
+ {
+  "escenario": "2005-PERU-todas",
+  "campo": "distritos_con_casos",
+  "esperado": 376,
+  "obtenido": 376,
+  "ok": true,
+  "hora": "2026-10-27T11:56:28.050Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "casos",
+  "esperado": 2793,
+  "obtenido": 2793,
+  "ok": true,
+  "hora": "2026-10-27T11:56:28.951Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "variacion_pct",
+  "esperado": 139.5,
+  "obtenido": 139.5,
+  "ok": true,
+  "hora": "2026-10-27T11:56:28.968Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "caso_anio_previo",
+  "esperado": 1166,
+  "obtenido": 1166,
+  "ok": true,
+  "hora": "2026-10-27T11:56:28.969Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "pf_pct",
+  "esperado": 0,
+  "obtenido": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:56:28.988Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "lider_casos",
+  "esperado": 1080,
+  "obtenido": 1080,
+  "ok": true,
+  "hora": "2026-10-27T11:56:29.008Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "pico_semana",
+  "esperado": 17,
+  "obtenido": 17,
+  "ok": true,
+  "hora": "2026-10-27T11:56:29.035Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "pico_casos",
+  "esperado": 135,
+  "obtenido": 135,
+  "ok": true,
+  "hora": "2026-10-27T11:56:29.036Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "semanas_con_casos",
+  "esperado": 53,
+  "obtenido": 53,
+  "ok": true,
+  "hora": "2026-10-27T11:56:29.038Z"
+ },
+ {
+  "escenario": "2008-TUMBES-vivax",
+  "campo": "distritos_con_casos",
+  "esperado": 11,
+  "obtenido": 11,
+  "ok": true,
+  "hora": "2026-10-27T11:56:29.048Z"
+ }
+]

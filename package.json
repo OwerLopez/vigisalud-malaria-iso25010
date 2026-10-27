@@ -1,0 +1,29 @@
+{
+  "name": "vigisalud-malaria-iso25010",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VigiSalud Malaria: dashboard de vigilancia de malaria (datos abiertos MINSA–CDC Perú) y evaluación de calidad ISO/IEC 25010. UNSA, Calidad de Software, TP6.",
+  "author": "Cari Quispe, Chura Monroy, Lopez Arela, Phocco Tapia, Zegarra Puma",
+  "license": "MIT",
+  "scripts": {
+    "datos": "python pipeline/procesar.py",
+    "oraculo": "python evaluacion/oraculo.py",
+    "pruebas": "playwright test -c evaluacion/playwright.config.js",
+    "lighthouse": "node evaluacion/scripts/lighthouse.mjs",
+    "disponibilidad": "node evaluacion/scripts/disponibilidad.mjs",
+    "seguridad": "node evaluacion/scripts/seguridad.mjs",
+    "mantenibilidad": "node evaluacion/scripts/mantenibilidad.mjs",
+    "consolidar": "node evaluacion/scripts/consolidar.mjs",
+    "corrida": "node evaluacion/scripts/corrida.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^9.39.5",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@playwright/test": "^1.64.1",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0",
+    "lighthouse": "^12.8.2"
+  }
+}

@@ -1,0 +1,38 @@
+[
+ {
+  "navegador": "chromium",
+  "pantalla": "movil",
+  "ancho": 375,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": "evaluacion/resultados/corrida-07/capturas/fl01-chromium-movil.png",
+  "hora": "2026-10-27T11:55:59.309Z"
+ },
+ {
+  "navegador": "chromium",
+  "pantalla": "tablet",
+  "ancho": 768,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": "evaluacion/resultados/corrida-07/capturas/fl01-chromium-tablet.png",
+  "hora": "2026-10-27T11:56:00.803Z"
+ },
+ {
+  "navegador": "chromium",
+  "pantalla": "escritorio",
+  "ancho": 1440,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": "evaluacion/resultados/corrida-07/capturas/fl01-chromium-escritorio.png",
+  "hora": "2026-10-27T11:56:02.467Z"
+ }
+]

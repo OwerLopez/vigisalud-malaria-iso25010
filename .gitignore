@@ -1,0 +1,8 @@
+node_modules/
+datos/crudos/*.csv
+__pycache__/
+*.pyc
+.vercel
+test-results/
+*.log
+evaluacion/resultados/corrida-*/artefactos/

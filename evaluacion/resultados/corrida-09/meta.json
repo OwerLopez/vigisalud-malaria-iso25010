@@ -1,0 +1,15 @@
+{
+ "corrida": "09",
+ "fecha": "2026-10-27T12:16:43.263Z",
+ "base_url": "https://vigisalud-malaria.vercel.app",
+ "commit": "ed65ebc",
+ "entorno": "Windows_NT 10.0.26300 · Node v22.14.0 · Playwright Version 1.64.1 · Lighthouse 12.8.2",
+ "navegadores": "Chromium, Firefox, WebKit (Playwright); Chrome estable (Lighthouse)",
+ "datos": "datos_abiertos_vigilancia_malaria_2000_2008.csv sha256:749d8897e94255d0; datos_abiertos_vigilancia_malaria_2009_2025.csv sha256:084ef118bd67753d",
+ "salida_pruebas": 0,
+ "salida_lighthouse": 0,
+ "salida_seguridad": 0,
+ "salida_mantenibilidad": 0,
+ "salida_disponibilidad": 0,
+ "fin": "2026-10-27T12:22:59.845Z"
+}

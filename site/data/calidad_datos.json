@@ -1,0 +1,112 @@
+{
+ "fecha_proceso": "2026-10-27",
+ "archivos": [
+  {
+   "archivo": "datos_abiertos_vigilancia_malaria_2000_2008.csv",
+   "periodo": "2000-2008",
+   "granularidad": "agregado semana-distrito",
+   "columnas": [
+    "ano",
+    "semana",
+    "departamento",
+    "provincia",
+    "distrito",
+    "ubigeo",
+    "falciparum",
+    "vivax"
+   ],
+   "filas": 106355,
+   "filas_invalidas": 0,
+   "casos": 612682,
+   "nulos": {
+    "departamento": 473,
+    "provincia": 473,
+    "distrito": 473
+   },
+   "sha256": "749d8897e94255d09caa745dbd91c2dd3710f0453199a65654731f6ef97efdd0",
+   "bytes": 5915238
+  },
+  {
+   "archivo": "datos_abiertos_vigilancia_malaria_2009_2025.csv",
+   "periodo": "2009-2025",
+   "granularidad": "nominal (un caso por fila)",
+   "columnas": [
+    "departamento",
+    "provincia",
+    "distrito",
+    "localidad",
+    "enfermedad",
+    "ano",
+    "semana",
+    "diagnostic",
+    "diresa",
+    "ubigeo",
+    "localcod",
+    "edad",
+    "tipo_edad",
+    "sexo"
+   ],
+   "filas": 630657,
+   "filas_invalidas": 40,
+   "motivos_invalidez": {
+    "edad_fuera_de_rango": 40
+   },
+   "casos": 630617,
+   "nulos": {
+    "localidad": 5412,
+    "localcod": 5634
+   },
+   "tipo_edad": {
+    "A": 622441,
+    "M": 8062,
+    "D": 114
+   },
+   "ultima_semana_por_anio": {
+    "2009": 53,
+    "2010": 52,
+    "2011": 52,
+    "2012": 52,
+    "2013": 52,
+    "2014": 53,
+    "2015": 52,
+    "2016": 52,
+    "2017": 52,
+    "2018": 52,
+    "2019": 52,
+    "2020": 53,
+    "2021": 52,
+    "2022": 52,
+    "2023": 52,
+    "2024": 52,
+    "2025": 53
+   },
+   "sha256": "084ef118bd67753db8785b23b3e78db15f61034e4fa3d3a2668896b779fd2232",
+   "bytes": 66753462
+  }
+ ],
+ "departamento_recuperado_por_ubigeo": {
+  "160109": 5570,
+  "160114": 142
+ },
+ "nombres_con_enie_restituida": {
+  "regla": "U+FFFD -> Ñ en departamento, provincia y distrito",
+  "nombres": [
+   "CAÑARIS",
+   "CAÑETE",
+   "CUÑUMBUQUI",
+   "DATEM DEL MARAÑON",
+   "FERREÑAFE",
+   "IÑAPARI",
+   "KOSÑIPATA",
+   "LA TINGUIÑA",
+   "MARAÑON",
+   "NEPEÑA",
+   "NUÑOA",
+   "PARIÑAS",
+   "SAN VICENTE DE CAÑETE",
+   "SAÑA"
+  ]
+ },
+ "total_casos": 1243299,
+ "regla_publicacion": "solo agregados por semana, distrito, grupo de edad y sexo"
+}

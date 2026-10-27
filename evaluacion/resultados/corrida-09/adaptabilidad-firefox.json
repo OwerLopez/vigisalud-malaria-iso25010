@@ -1,0 +1,38 @@
+[
+ {
+  "navegador": "firefox",
+  "pantalla": "movil",
+  "ancho": 375,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": "evaluacion/resultados/corrida-09/capturas/fl01-firefox-movil.png",
+  "hora": "2026-10-27T12:17:20.189Z"
+ },
+ {
+  "navegador": "firefox",
+  "pantalla": "tablet",
+  "ancho": 768,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": null,
+  "hora": "2026-10-27T12:17:21.800Z"
+ },
+ {
+  "navegador": "firefox",
+  "pantalla": "escritorio",
+  "ancho": 1440,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": null,
+  "hora": "2026-10-27T12:17:23.372Z"
+ }
+]

@@ -1,0 +1,201 @@
+{
+ "funcionales": [
+  {
+   "id": "RF-01",
+   "es": "Cargar los datos oficiales y mostrar los indicadores clave del año y ámbito seleccionados",
+   "en": "Load the official data and show the key indicators"
+  },
+  {
+   "id": "RF-02",
+   "es": "Filtrar por año (2000–2025)",
+   "en": "Filter by year"
+  },
+  {
+   "id": "RF-03",
+   "es": "Filtrar por departamento",
+   "en": "Filter by department"
+  },
+  {
+   "id": "RF-04",
+   "es": "Filtrar por especie (P. vivax, P. falciparum)",
+   "en": "Filter by species"
+  },
+  {
+   "id": "RF-05",
+   "es": "Mostrar la serie anual por especie",
+   "en": "Show the annual series by species"
+  },
+  {
+   "id": "RF-06",
+   "es": "Mostrar la curva semanal frente al canal endémico",
+   "en": "Show the weekly curve against the endemic channel"
+  },
+  {
+   "id": "RF-07",
+   "es": "Mostrar un mapa coroplético por departamento que permita seleccionarlo",
+   "en": "Show a choropleth map that selects a department"
+  },
+  {
+   "id": "RF-08",
+   "es": "Mostrar el ranking de departamentos",
+   "en": "Show the department ranking"
+  },
+  {
+   "id": "RF-09",
+   "es": "Mostrar la distribución por edad y sexo (desde 2009)",
+   "en": "Show the age and sex distribution (from 2009)"
+  },
+  {
+   "id": "RF-10",
+   "es": "Listar los distritos con búsqueda y ordenamiento",
+   "en": "List districts with search and sorting"
+  },
+  {
+   "id": "RF-11",
+   "es": "Exportar los datos filtrados en CSV y JSON",
+   "en": "Export filtered data as CSV and JSON"
+  },
+  {
+   "id": "RF-12",
+   "es": "Informar la fuente, la validación y los hashes de los datos",
+   "en": "Disclose source, validation and data hashes"
+  },
+  {
+   "id": "RF-13",
+   "es": "Ofrecer la interfaz en español e inglés",
+   "en": "Offer the interface in Spanish and English"
+  },
+  {
+   "id": "RF-14",
+   "es": "Compartir el estado de los filtros mediante la URL",
+   "en": "Share the filter state through the URL"
+  },
+  {
+   "id": "RF-15",
+   "es": "Presentar el tablero de control de calidad ISO/IEC 25010",
+   "en": "Present the ISO/IEC 25010 quality control board"
+  }
+ ],
+ "no_funcionales": [
+  {
+   "id": "RNF-01",
+   "es": "Las cifras deben coincidir con los CSV oficiales",
+   "metricas": [
+    "IF-02"
+   ],
+   "en": "Figures must match the official CSV files"
+  },
+  {
+   "id": "RNF-02",
+   "es": "Cubrir las dimensiones tiempo, lugar y persona de la vigilancia",
+   "metricas": [
+    "IF-03"
+   ],
+   "en": "Cover the time, place and person dimensions of surveillance"
+  },
+  {
+   "id": "RNF-03",
+   "es": "Carga ≤ 2,5 s (LCP móvil) y respuesta a filtros ≤ 200 ms",
+   "metricas": [
+    "ED-01",
+    "ED-02"
+   ],
+   "en": "Load ≤ 2.5 s (mobile LCP) and filter response ≤ 200 ms"
+  },
+  {
+   "id": "RNF-04",
+   "es": "Carga inicial ≤ 1000 KB",
+   "metricas": [
+    "ED-03"
+   ],
+   "en": "Initial load ≤ 1000 KB"
+  },
+  {
+   "id": "RNF-05",
+   "es": "Accesible según WCAG 2.2 AA y operable con teclado",
+   "metricas": [
+    "CI-01",
+    "CI-03",
+    "CI-04"
+   ],
+   "en": "Accessible under WCAG 2.2 AA and keyboard operable"
+  },
+  {
+   "id": "RNF-06",
+   "es": "Controlar entradas inválidas sin fallar",
+   "metricas": [
+    "CI-02"
+   ],
+   "en": "Handle invalid input without failing"
+  },
+  {
+   "id": "RNF-07",
+   "es": "Sin errores en uso normal; fallos de datos controlados y recuperables",
+   "metricas": [
+    "FI-01",
+    "FI-03",
+    "FI-04"
+   ],
+   "en": "No errors in normal use; data failures handled and recoverable"
+  },
+  {
+   "id": "RNF-08",
+   "es": "Disponibilidad ≥ 99 %",
+   "metricas": [
+    "FI-02"
+   ],
+   "en": "Availability ≥ 99 %"
+  },
+  {
+   "id": "RNF-09",
+   "es": "Publicar solo agregados (Ley N.° 29733)",
+   "metricas": [
+    "SE-01"
+   ],
+   "en": "Publish aggregates only (Peruvian Law No. 29733)"
+  },
+  {
+   "id": "RNF-10",
+   "es": "Verificar la integridad de los datos de origen y forzar HTTPS",
+   "metricas": [
+    "SE-02"
+   ],
+   "en": "Verify source data integrity and enforce HTTPS"
+  },
+  {
+   "id": "RNF-11",
+   "es": "Aplicar las cabeceras de seguridad recomendadas por OWASP",
+   "metricas": [
+    "SE-03"
+   ],
+   "en": "Apply the OWASP recommended security headers"
+  },
+  {
+   "id": "RNF-12",
+   "es": "Código analizable y sin defectos de análisis estático",
+   "metricas": [
+    "MA-01",
+    "MA-02"
+   ],
+   "en": "Analysable code free of static-analysis defects"
+  },
+  {
+   "id": "RNF-13",
+   "es": "Funcionar en Chromium, Firefox y WebKit, en móvil, tablet y escritorio",
+   "metricas": [
+    "FL-01"
+   ],
+   "en": "Work on Chromium, Firefox and WebKit, on mobile, tablet and desktop"
+  },
+  {
+   "id": "RNF-14",
+   "es": "Advertir el carácter provisional, señalar límites y fallar de forma segura",
+   "metricas": [
+    "SO-01",
+    "SO-02",
+    "SO-03"
+   ],
+   "en": "Warn about provisional data, state limitations and fail safely"
+  }
+ ]
+}

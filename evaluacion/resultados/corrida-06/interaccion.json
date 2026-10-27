@@ -1,0 +1,177 @@
+[
+ {
+  "metrica": "CI-01",
+  "controles": 31,
+  "alcanzados": 31,
+  "no_alcanzados": [],
+  "operaciones": {
+   "enter_especie": true,
+   "flechas_departamento": true,
+   "espacio_idioma": true
+  },
+  "hora": "2026-10-27T11:44:46.552Z"
+ },
+ {
+  "metrica": "CI-02",
+  "entrada": {
+   "anio": "1990"
+  },
+  "aviso_visible": true,
+  "errores": [],
+  "ok": true,
+  "hora": "2026-10-27T11:44:47.488Z"
+ },
+ {
+  "metrica": "CI-02",
+  "entrada": {
+   "anio": "abc"
+  },
+  "aviso_visible": true,
+  "errores": [],
+  "ok": true,
+  "hora": "2026-10-27T11:44:48.450Z"
+ },
+ {
+  "metrica": "CI-02",
+  "entrada": {
+   "dep": "ATLANTIDA"
+  },
+  "aviso_visible": true,
+  "errores": [],
+  "ok": true,
+  "hora": "2026-10-27T11:44:49.598Z"
+ },
+ {
+  "metrica": "CI-02",
+  "entrada": {
+   "esp": "malariae"
+  },
+  "aviso_visible": true,
+  "errores": [],
+  "ok": true,
+  "hora": "2026-10-27T11:44:50.668Z"
+ },
+ {
+  "metrica": "CI-02",
+  "entrada": {
+   "anio": "2030",
+   "dep": "<script>",
+   "esp": "x"
+  },
+  "aviso_visible": true,
+  "errores": [],
+  "ok": true,
+  "hora": "2026-10-27T11:44:51.713Z"
+ },
+ {
+  "metrica": "CI-04",
+  "total": 5,
+  "ok": 5,
+  "detalle": [
+   {
+    "grafico": "chAnual",
+    "etiqueta": "Casos notificados por año y especie: Todo el Perú",
+    "alternativa": "#tbAnual",
+    "ok": true
+   },
+   {
+    "grafico": "chCanal",
+    "etiqueta": "Curva semanal y canal endémico 2024",
+    "alternativa": "#tbCanal",
+    "ok": true
+   },
+   {
+    "grafico": "chPiramide",
+    "etiqueta": "Casos por grupo de edad y sexo 2024",
+    "alternativa": "#tbPiramide",
+    "ok": true
+   },
+   {
+    "grafico": "chMapa",
+    "etiqueta": "Casos por departamento 2024",
+    "alternativa": "#chRank",
+    "ok": true
+   },
+   {
+    "grafico": "chRank",
+    "etiqueta": "Ranking de departamentos 2024",
+    "alternativa": "#tbDist",
+    "ok": true
+   }
+  ],
+  "hora": "2026-10-27T11:44:52.901Z"
+ },
+ {
+  "metrica": "SO-01",
+  "vista": {
+   "anio": "2025"
+  },
+  "ok": true,
+  "hora": "2026-10-27T11:44:53.912Z"
+ },
+ {
+  "metrica": "SO-01",
+  "vista": {
+   "anio": "2010",
+   "dep": "LORETO"
+  },
+  "ok": true,
+  "hora": "2026-10-27T11:44:54.171Z"
+ },
+ {
+  "metrica": "SO-01",
+  "vista": {
+   "anio": "2003",
+   "esp": "falciparum"
+  },
+  "ok": true,
+  "hora": "2026-10-27T11:44:54.462Z"
+ },
+ {
+  "metrica": "SO-01",
+  "vista": {
+   "anio": "2025",
+   "lang": "en"
+  },
+  "ok": true,
+  "hora": "2026-10-27T11:44:54.732Z"
+ },
+ {
+  "metrica": "SO-01",
+  "vista": {
+   "anio": "2019",
+   "dep": "TUMBES",
+   "lang": "en"
+  },
+  "ok": true,
+  "hora": "2026-10-27T11:44:54.985Z"
+ },
+ {
+  "metrica": "SO-03",
+  "checks": {
+   "cambio_fuente_2009": true,
+   "edad_no_disponible": true,
+   "casos_no_son_tasas": true,
+   "canal_sin_anios": true
+  },
+  "ok": 4,
+  "total": 4,
+  "hora": "2026-10-27T11:44:56.392Z"
+ },
+ {
+  "metrica": "IF-03",
+  "dims": {
+   "tendencia_anual": true,
+   "semana_epidemiologica": true,
+   "canal_endemico": true,
+   "departamento": true,
+   "distrito": true,
+   "edad": true,
+   "sexo": true,
+   "especie": true
+  },
+  "ok": 8,
+  "total": 8,
+  "hora": "2026-10-27T11:44:57.389Z"
+ }
+]

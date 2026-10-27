@@ -1,0 +1,38 @@
+[
+ {
+  "navegador": "webkit",
+  "pantalla": "movil",
+  "ancho": 375,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": "evaluacion/resultados/corrida-07/capturas/fl01-webkit-movil.png",
+  "hora": "2026-10-27T11:56:32.826Z"
+ },
+ {
+  "navegador": "webkit",
+  "pantalla": "tablet",
+  "ancho": 768,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": null,
+  "hora": "2026-10-27T11:56:35.847Z"
+ },
+ {
+  "navegador": "webkit",
+  "pantalla": "escritorio",
+  "ancho": 1440,
+  "desborde": 0,
+  "graficos": 5,
+  "errores": [],
+  "ok": true,
+  "sin_errores": true,
+  "evidencia": null,
+  "hora": "2026-10-27T11:56:39.014Z"
+ }
+]

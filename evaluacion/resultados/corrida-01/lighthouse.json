@@ -1,0 +1,62 @@
+{
+ "url": "https://vigisalud-malaria.vercel.app",
+ "perfil": "móvil (Moto G Power, 4G lenta simulada, CPU ×4)",
+ "ejecuciones": [
+  {
+   "ejecucion": 1,
+   "fecha": "2026-10-27T05:11:13.663Z",
+   "version": "12.8.2",
+   "rendimiento": 90,
+   "accesibilidad": 100,
+   "buenas_practicas": 100,
+   "seo": 100,
+   "fcp_s": 2.1082229999999997,
+   "lcp_s": 3.2911565000000005,
+   "tbt_ms": 73.5560000000005,
+   "cls": 0,
+   "peso_kb": 276.12109375,
+   "solicitudes": 13
+  },
+  {
+   "ejecucion": 2,
+   "fecha": "2026-10-27T05:11:25.969Z",
+   "version": "12.8.2",
+   "rendimiento": 90,
+   "accesibilidad": 100,
+   "buenas_practicas": 100,
+   "seo": 100,
+   "fcp_s": 2.116389,
+   "lcp_s": 3.3021274999999997,
+   "tbt_ms": 65.00499999999965,
+   "cls": 0,
+   "peso_kb": 276.1171875,
+   "solicitudes": 13
+  },
+  {
+   "ejecucion": 3,
+   "fecha": "2026-10-27T05:11:37.074Z",
+   "version": "12.8.2",
+   "rendimiento": 91,
+   "accesibilidad": 100,
+   "buenas_practicas": 100,
+   "seo": 100,
+   "fcp_s": 2.1043495,
+   "lcp_s": 3.2911680000000008,
+   "tbt_ms": 57.371000000000095,
+   "cls": 0,
+   "peso_kb": 276.31640625,
+   "solicitudes": 13
+  }
+ ],
+ "mediana": {
+  "rendimiento": 90,
+  "accesibilidad": 100,
+  "buenas_practicas": 100,
+  "seo": 100,
+  "fcp_s": 2.1082229999999997,
+  "lcp_s": 3.2911680000000008,
+  "tbt_ms": 65.00499999999965,
+  "cls": 0,
+  "peso_kb": 276.12109375
+ }
+}

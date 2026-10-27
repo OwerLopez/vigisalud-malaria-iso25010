@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Diagramas del informe</title>
+<style>
+@font-face { font-family: "Plex"; font-weight: 400; src: url("../site/assets/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plex"; font-weight: 600; src: url("../site/assets/fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plex"; font-weight: 700; src: url("../site/assets/fonts/ibm-plex-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "PlexMono"; font-weight: 400; src: url("../site/assets/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); }
+:root { --g: #7A1F2B; --g2: #F6ECEE; --tx: #1F2328; --tx2: #57606A; --ln: #D0D7DE; --az: #2A78D6; --az2: #EAF2FC; --ok: #0CA30C; --ok2: #E7F6E7; --wa: #B7791F; --wa2: #FEF6E4; --cr: #D03B3B; --cr2: #FBEAEA; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; background: #fff; font-family: "Plex", system-ui, sans-serif; color: var(--tx); }
+.diag { width: 1200px; padding: 28px 30px; background: #fff; margin-bottom: 40px; border: 1px solid #fff; }
+h2 { margin: 0 0 4px; font-size: 22px; color: var(--g); }
+p.s { margin: 0 0 22px; color: var(--tx2); font-size: 14px; }
+.row { display: flex; align-items: stretch; gap: 0; }
+.box { border: 1.5px solid var(--ln); border-radius: 12px; padding: 14px 14px; background: #fff; flex: 1; font-size: 13.5px; line-height: 1.4; }
+.box h3 { margin: 0 0 6px; font-size: 15px; }
+.box ul { margin: 6px 0 0; padding-left: 18px; }
+.box li { margin: 2px 0; }
+.box .k { font-family: "PlexMono", monospace; font-size: 12px; color: var(--tx2); }
+.fl { width: 46px; display: flex; align-items: center; justify-content: center; color: var(--tx2); font-size: 26px; flex: 0 0 46px; }
+.g { border-color: var(--g); background: var(--g2); }
+.a { border-color: var(--az); background: var(--az2); }
+.o { border-color: var(--ok); background: var(--ok2); }
+.w { border-color: var(--wa); background: var(--wa2); }
+.r { border-color: var(--cr); background: var(--cr2); }
+.lab { font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; color: var(--tx2); margin: 18px 0 8px; }
+.num { display: inline-flex; width: 26px; height: 26px; border-radius: 50%; background: var(--g); color: #fff; font-weight: 700; align-items: center; justify-content: center; font-size: 14px; margin-right: 6px; }
+.loop { margin-top: 14px; border: 1.5px dashed var(--g); border-radius: 12px; padding: 10px 14px; font-size: 13.5px; color: var(--g); background: #fff; }
+.grid7 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.q { border: 1.5px solid var(--tx); border-radius: 10px; padding: 10px 14px; font-weight: 600; font-size: 14px; background: #fff; text-align: center; }
+.si { color: var(--ok); font-weight: 700; } .no { color: var(--cr); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<div class="diag" id="d-arquitectura">
+  <h2>Arquitectura del producto y del proceso de evaluación</h2>
+  <p class="s">Los datos oficiales se procesan una sola vez; el navegador solo recibe agregados. La evaluación mide la versión publicada y alimenta el tablero de control.</p>
+  <div class="lab">Producto evaluado: VigiSalud Malaria</div>
+  <div class="row">
+    <div class="box g"><h3>Fuente oficial</h3>datosabiertos.gob.pe · MINSA – CDC Perú<ul><li>2000–2008: agregado semana-distrito</li><li>2009–2025: un caso por fila</li><li>Licencia ODC-By</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Pipeline</h3><span class="k">pipeline/procesar.py</span><ul><li>Valida año, semana, edad, sexo y CIE-10 (B50/B51)</li><li>Recupera el departamento por ubigeo INEI</li><li>Agrega y calcula SHA-256</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Datos publicados</h3><span class="k">site/data/*.json</span><ul><li>Solo agregados (sin registros individuales)</li><li>malaria.json · departamentos.geojson</li><li>calidad_datos.json</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box a"><h3>Vercel (CDN)</h3><ul><li>Sitio estático HTTPS</li><li>Cabeceras OWASP y CSP</li><li>Sin servidor propio</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Navegador</h3><ul><li>Dashboard ES/EN (D3 v7)</li><li>Tablero de calidad ISO/IEC 25010</li></ul></div>
+  </div>
+  <div class="lab">Evaluación de calidad (ISO/IEC 25040)</div>
+  <div class="row">
+    <div class="box"><h3>Modelo y métricas</h3><span class="k">modelo.json · metricas.json · requisitos.json</span><ul><li>9 características, 25 métricas GQM</li><li>Umbrales fijados antes de medir</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Corrida NN</h3><span class="k">corrida.mjs</span><ul><li>Playwright (3 navegadores) + axe-core</li><li>Lighthouse, oráculo Python</li><li>Seguridad, mantenibilidad, disponibilidad</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Evidencias</h3><span class="k">resultados/corrida-NN/</span><ul><li>JSON por métrica, capturas, trazas</li><li>Reporte HTML de Playwright</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Consolidación</h3><span class="k">consolidar.mjs</span><ul><li>A, B, X, estado y puntaje</li><li>registro.json + incidentes</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box o"><h3>Tablero de control</h3><span class="k">calidad.html</span><ul><li>Publicado junto al producto</li><li>Excel con fórmulas</li></ul></div>
+  </div>
+</div>
+
+<div class="diag" id="d-proceso">
+  <h2>Proceso de evaluación adoptado (ISO/IEC 25040)</h2>
+  <p class="s">Cinco actividades con entradas, salidas y responsables. Cada incidente vuelve a medirse en la corrida siguiente.</p>
+  <div class="row">
+    <div class="box g"><span class="num">1</span><b>Establecer los requisitos</b><ul><li>Propósito y alcance</li><li>RF-01…RF-15, RNF-01…RNF-14</li><li>Características y prioridades</li></ul><div class="k">Cari Quispe</div></div>
+    <div class="fl">→</div>
+    <div class="box"><span class="num">2</span><b>Especificar la evaluación</b><ul><li>25 métricas GQM (A, B, fórmula)</li><li>Umbrales de aceptación</li><li>Escala de puntaje</li></ul><div class="k">Chura Monroy · Lopez Arela</div></div>
+    <div class="fl">→</div>
+    <div class="box"><span class="num">3</span><b>Diseñar la evaluación</b><ul><li>Procedimientos y scripts</li><li>Formato de recopilación</li><li>Clasificación de fallos</li></ul><div class="k">Phocco Tapia</div></div>
+    <div class="fl">→</div>
+    <div class="box a"><span class="num">4</span><b>Ejecutar la evaluación</b><ul><li>Corridas 01 a 09 en producción</li><li>Registro de mediciones</li><li>Registro de incidentes</li></ul><div class="k">Todo el equipo</div></div>
+    <div class="fl">→</div>
+    <div class="box o"><span class="num">5</span><b>Concluir la evaluación</b><ul><li>Tablero de control</li><li>Informe y decisiones</li><li>Lecciones aprendidas</li></ul><div class="k">Zegarra Puma</div></div>
+  </div>
+  <div class="loop">↺ Ciclo de mejora: medición rechazada → incidente clasificado por origen → corrección del producto, del script o del entorno → nueva corrida con el mismo procedimiento → comparación en el tablero.</div>
+</div>
+
+<div class="diag" id="d-formato">
+  <h2>Formato de recopilación de datos: una ficha por métrica y corrida</h2>
+  <p class="s">Los siete bloques se llenan automáticamente desde las evidencias (registro.json) y se replican en la hoja «Registro» del Excel.</p>
+  <div class="grid7">
+    <div class="box g"><h3>1. Identificación</h3><ul><li>ID de métrica</li><li>Característica</li><li>Subcaracterística</li></ul></div>
+    <div class="box"><h3>2. Trazabilidad</h3><ul><li>Requisito (RF/RNF)</li><li>Caso o procedimiento</li><li>Script o herramienta</li></ul></div>
+    <div class="box"><h3>3. Condiciones</h3><ul><li>Corrida y versión</li><li>Fecha y URL</li><li>Entorno y navegador</li><li>Datos (SHA-256)</li></ul></div>
+    <div class="box a"><h3>4. Medición</h3><ul><li>A y B (o valor)</li><li>Fórmula</li><li>Resultado X y unidad</li></ul></div>
+    <div class="box"><h3>5. Evaluación</h3><ul><li>Umbral y resultado esperado</li><li>Estado (aprobado, rechazado, pendiente)</li><li>Puntaje y categoría</li></ul></div>
+    <div class="box"><h3>6. Evidencia</h3><ul><li>Archivo JSON de la corrida</li><li>Capturas y trazas</li><li>Reporte HTML</li></ul></div>
+    <div class="box o"><h3>7. Seguimiento</h3><ul><li>Responsable</li><li>Incidentes vinculados</li><li>Decisión y observaciones</li></ul></div>
+    <div class="box w"><h3>Estados posibles</h3><ul><li><b>Aprobado</b>: cumple el umbral</li><li><b>Rechazado</b>: no lo cumple</li><li><b>Pendiente</b>: sin medición</li><li><b>No aplicable</b>: subcaracterística justificada</li></ul></div>
+  </div>
+</div>
+
+<div class="diag" id="d-origen">
+  <h2>Clasificación de un fallo por su origen</h2>
+  <p class="s">Antes de corregir, cada fallo se reproduce y se clasifica. Así no se «arregla» el producto cuando el error estaba en la prueba, ni al revés.</p>
+  <div class="q">Una prueba o medición no cumple lo esperado</div>
+  <div class="row" style="margin-top:12px; gap:12px">
+    <div class="box r"><h3>Producto</h3>El defecto se reproduce a mano en la versión publicada (cifras, interfaz, accesibilidad, rendimiento, código).<ul><li>INC-01, 02, 11, 16, 18, 19, 21, 22 interfaz</li><li>INC-07, 09, 17, 20 código y datos</li><li>INC-08, 12 a 15 rendimiento</li></ul><b>Acción:</b> corregir el producto, publicar y volver a medir.</div>
+    <div class="box w"><h3>Script de prueba</h3>El producto se comporta bien; el fallo está en el localizador, la aserción o la forma de registrar la medición.<ul><li>INC-04 localizador ambiguo</li><li>INC-05 pérdida de filas</li><li>INC-06, INC-10 falsos positivos</li></ul><b>Acción:</b> corregir el script sin tocar el producto.</div>
+    <div class="box a"><h3>Infraestructura</h3>El fallo depende del entorno: navegadores, red, hosting o herramientas de ejecución.<ul><li>INC-03 navegadores no instalados</li></ul><b>Acción:</b> reparar el entorno y repetir la corrida con el mismo procedimiento.</div>
+  </div>
+</div>
+
+</body>
+</html>

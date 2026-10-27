@@ -1,0 +1,414 @@
+{
+ "norma": "ISO/IEC 25010:2023 Systems and software engineering — SQuaRE — Product quality model",
+ "objeto": "VigiSalud Malaria v1 (dashboard web estático publicado en https://vigisalud-malaria.vercel.app)",
+ "escala_paper": [
+  {
+   "desde": 0,
+   "hasta": 40,
+   "es": "No aceptable",
+   "en": "Not acceptable"
+  },
+  {
+   "desde": 40,
+   "hasta": 60,
+   "es": "Mínimamente aceptable",
+   "en": "Minimally acceptable"
+  },
+  {
+   "desde": 60,
+   "hasta": 90,
+   "es": "Rango objetivo",
+   "en": "Target range"
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "es": "Supera los requisitos",
+   "en": "Exceeds requirements"
+  }
+ ],
+ "caracteristicas": [
+  {
+   "id": "IF",
+   "es": "Idoneidad funcional",
+   "en": "Functional suitability",
+   "prioridad": "Alta",
+   "justificacion": "Un sistema de vigilancia que muestra cifras incorrectas lleva a decisiones sanitarias erróneas; la corrección de los conteos es el requisito central.",
+   "sub": [
+    {
+     "es": "Completitud funcional",
+     "en": "Functional completeness",
+     "estado": "seleccionada",
+     "metricas": [
+      "IF-01"
+     ]
+    },
+    {
+     "es": "Corrección funcional",
+     "en": "Functional correctness",
+     "estado": "seleccionada",
+     "metricas": [
+      "IF-02"
+     ]
+    },
+    {
+     "es": "Pertinencia funcional",
+     "en": "Functional appropriateness",
+     "estado": "seleccionada",
+     "metricas": [
+      "IF-03"
+     ]
+    }
+   ],
+   "justificacion_en": "A surveillance system that shows wrong figures leads to wrong health decisions; correct counts are the core requirement."
+  },
+  {
+   "id": "ED",
+   "es": "Eficiencia de desempeño",
+   "en": "Performance efficiency",
+   "prioridad": "Media",
+   "justificacion": "El personal de epidemiología de establecimientos amazónicos trabaja con conexiones móviles lentas; la carga y la respuesta a filtros deben ser rápidas.",
+   "sub": [
+    {
+     "es": "Comportamiento temporal",
+     "en": "Time behaviour",
+     "estado": "seleccionada",
+     "metricas": [
+      "ED-01",
+      "ED-02"
+     ]
+    },
+    {
+     "es": "Utilización de recursos",
+     "en": "Resource utilization",
+     "estado": "seleccionada",
+     "metricas": [
+      "ED-03"
+     ]
+    },
+    {
+     "es": "Capacidad",
+     "en": "Capacity",
+     "estado": "no aplicable",
+     "motivo": "Sitio estático servido por la red de distribución de Vercel; no hay servidor propio ni usuarios concurrentes que limitar.",
+     "motivo_en": "Static site served by Vercel's CDN; no own server or concurrent users to limit."
+    }
+   ],
+   "justificacion_en": "Epidemiology staff in Amazon health facilities work on slow mobile connections; loading and filter response must be fast."
+  },
+  {
+   "id": "CO",
+   "es": "Compatibilidad",
+   "en": "Compatibility",
+   "prioridad": "Baja",
+   "justificacion": "Los analistas reutilizan los datos en Excel u otros sistemas; basta con que las exportaciones sean interoperables.",
+   "sub": [
+    {
+     "es": "Interoperabilidad",
+     "en": "Interoperability",
+     "estado": "seleccionada",
+     "metricas": [
+      "CO-01"
+     ]
+    },
+    {
+     "es": "Coexistencia",
+     "en": "Co-existence",
+     "estado": "no aplicable",
+     "motivo": "Se ejecuta en el navegador sin compartir recursos con otros productos instalados.",
+     "motivo_en": "Runs in the browser without sharing resources with other installed products."
+    }
+   ],
+   "justificacion_en": "Analysts reuse the data in Excel or other systems; interoperable exports are enough."
+  },
+  {
+   "id": "CI",
+   "es": "Capacidad de interacción",
+   "en": "Interaction capability",
+   "prioridad": "Alta",
+   "justificacion": "Lo usan personas con distinta formación y posibles discapacidades; los errores de uso no deben producir conclusiones falsas.",
+   "sub": [
+    {
+     "es": "Operabilidad",
+     "en": "Operability",
+     "estado": "seleccionada",
+     "metricas": [
+      "CI-01"
+     ]
+    },
+    {
+     "es": "Protección contra errores de usuario",
+     "en": "User error protection",
+     "estado": "seleccionada",
+     "metricas": [
+      "CI-02"
+     ]
+    },
+    {
+     "es": "Inclusividad",
+     "en": "Inclusivity",
+     "estado": "seleccionada",
+     "metricas": [
+      "CI-03"
+     ]
+    },
+    {
+     "es": "Autodescriptividad",
+     "en": "Self-descriptiveness",
+     "estado": "seleccionada",
+     "metricas": [
+      "CI-04"
+     ]
+    },
+    {
+     "es": "Reconocibilidad de la adecuación",
+     "en": "Appropriateness recognizability",
+     "estado": "no evaluada",
+     "motivo": "Requiere pruebas con usuarios reales del CDC; queda para una iteración con usuarios.",
+     "motivo_en": "Requires tests with real CDC users; left for a user-testing iteration."
+    },
+    {
+     "es": "Aprendizabilidad",
+     "en": "Learnability",
+     "estado": "no evaluada",
+     "motivo": "Requiere pruebas con usuarios; fuera del alcance de esta evaluación automatizada.",
+     "motivo_en": "Requires user testing; outside the scope of this automated evaluation."
+    }
+   ],
+   "justificacion_en": "Users have different backgrounds and possible disabilities; usage errors must not lead to false conclusions."
+  },
+  {
+   "id": "FI",
+   "es": "Fiabilidad",
+   "en": "Reliability",
+   "prioridad": "Alta",
+   "justificacion": "Durante un brote el tablero debe estar disponible y, si algo falla, no debe mostrar información parcial.",
+   "sub": [
+    {
+     "es": "Ausencia de fallos",
+     "en": "Faultlessness",
+     "estado": "seleccionada",
+     "metricas": [
+      "FI-01"
+     ]
+    },
+    {
+     "es": "Disponibilidad",
+     "en": "Availability",
+     "estado": "seleccionada",
+     "metricas": [
+      "FI-02"
+     ]
+    },
+    {
+     "es": "Tolerancia a fallos",
+     "en": "Fault tolerance",
+     "estado": "seleccionada",
+     "metricas": [
+      "FI-03"
+     ]
+    },
+    {
+     "es": "Recuperabilidad",
+     "en": "Recoverability",
+     "estado": "seleccionada",
+     "metricas": [
+      "FI-04"
+     ]
+    }
+   ],
+   "justificacion_en": "During an outbreak the board must be available and, if something fails, it must not show partial information."
+  },
+  {
+   "id": "SE",
+   "es": "Seguridad",
+   "en": "Security",
+   "prioridad": "Alta",
+   "justificacion": "Los datos de origen son nominales (edad, sexo, localidad); solo deben publicarse agregados íntegros y el sitio debe resistir ataques web comunes.",
+   "sub": [
+    {
+     "es": "Confidencialidad",
+     "en": "Confidentiality",
+     "estado": "seleccionada",
+     "metricas": [
+      "SE-01"
+     ]
+    },
+    {
+     "es": "Integridad",
+     "en": "Integrity",
+     "estado": "seleccionada",
+     "metricas": [
+      "SE-02"
+     ]
+    },
+    {
+     "es": "Resistencia",
+     "en": "Resistance",
+     "estado": "seleccionada",
+     "metricas": [
+      "SE-03"
+     ]
+    },
+    {
+     "es": "No repudio",
+     "en": "Non-repudiation",
+     "estado": "no aplicable",
+     "motivo": "Sistema de solo lectura: no hay transacciones ni acciones de usuarios que atribuir.",
+     "motivo_en": "Read-only system: there are no transactions or user actions to attribute."
+    },
+    {
+     "es": "Responsabilidad",
+     "en": "Accountability",
+     "estado": "no aplicable",
+     "motivo": "No hay cuentas de usuario ni operaciones que registrar.",
+     "motivo_en": "There are no user accounts or operations to log."
+    },
+    {
+     "es": "Autenticidad",
+     "en": "Authenticity",
+     "estado": "no aplicable",
+     "motivo": "Información pública sin inicio de sesión.",
+     "motivo_en": "Public information without sign-in."
+    }
+   ],
+   "justificacion_en": "Source data is case-level (age, sex, locality); only intact aggregates may be published and the site must resist common web attacks."
+  },
+  {
+   "id": "MA",
+   "es": "Mantenibilidad",
+   "en": "Maintainability",
+   "prioridad": "Media",
+   "justificacion": "El dataset se actualiza cada semana; el equipo debe poder modificar y volver a probar el sistema con facilidad.",
+   "sub": [
+    {
+     "es": "Analizabilidad",
+     "en": "Analysability",
+     "estado": "seleccionada",
+     "metricas": [
+      "MA-01"
+     ]
+    },
+    {
+     "es": "Modificabilidad",
+     "en": "Modifiability",
+     "estado": "seleccionada",
+     "metricas": [
+      "MA-02"
+     ]
+    },
+    {
+     "es": "Capacidad de prueba",
+     "en": "Testability",
+     "estado": "seleccionada",
+     "metricas": [
+      "MA-03"
+     ]
+    },
+    {
+     "es": "Modularidad",
+     "en": "Modularity",
+     "estado": "no evaluada",
+     "motivo": "Se observa indirectamente en MA-01 y MA-02; no tiene métrica propia.",
+     "motivo_en": "Observed indirectly through MA-01 and MA-02; it has no metric of its own."
+    },
+    {
+     "es": "Reusabilidad",
+     "en": "Reusability",
+     "estado": "no evaluada",
+     "motivo": "No es un objetivo del proyecto en esta etapa.",
+     "motivo_en": "Not a project goal at this stage."
+    }
+   ],
+   "justificacion_en": "The dataset is updated weekly; the team must be able to change and re-test the system easily."
+  },
+  {
+   "id": "FL",
+   "es": "Flexibilidad",
+   "en": "Flexibility",
+   "prioridad": "Media",
+   "justificacion": "Se consulta desde computadoras de escritorio, tablets y celulares con navegadores distintos.",
+   "sub": [
+    {
+     "es": "Adaptabilidad",
+     "en": "Adaptability",
+     "estado": "seleccionada",
+     "metricas": [
+      "FL-01"
+     ]
+    },
+    {
+     "es": "Escalabilidad",
+     "en": "Scalability",
+     "estado": "no aplicable",
+     "motivo": "El volumen de datos publicados es fijo por versión y el hosting escala automáticamente.",
+     "motivo_en": "Published data volume is fixed per version and hosting scales automatically."
+    },
+    {
+     "es": "Instalabilidad",
+     "en": "Installability",
+     "estado": "no aplicable",
+     "motivo": "Aplicación web: no se instala.",
+     "motivo_en": "Web application: nothing is installed."
+    },
+    {
+     "es": "Reemplazabilidad",
+     "en": "Replaceability",
+     "estado": "no aplicable",
+     "motivo": "No reemplaza a otro producto en esta etapa.",
+     "motivo_en": "Does not replace another product at this stage."
+    }
+   ],
+   "justificacion_en": "It is used on desktop computers, tablets and phones with different browsers."
+  },
+  {
+   "id": "SO",
+   "es": "Seguridad operacional",
+   "en": "Safety",
+   "prioridad": "Alta",
+   "justificacion": "En salud pública, una cifra mal interpretada puede retrasar una respuesta a un brote; el sistema debe advertir sus límites y fallar de forma segura.",
+   "sub": [
+    {
+     "es": "Advertencia de peligro",
+     "en": "Hazard warning",
+     "estado": "seleccionada",
+     "metricas": [
+      "SO-01"
+     ]
+    },
+    {
+     "es": "A prueba de fallos",
+     "en": "Fail safe",
+     "estado": "seleccionada",
+     "metricas": [
+      "SO-02"
+     ]
+    },
+    {
+     "es": "Identificación de riesgos",
+     "en": "Risk identification",
+     "estado": "seleccionada",
+     "metricas": [
+      "SO-03"
+     ]
+    },
+    {
+     "es": "Restricción operacional",
+     "en": "Operational constraint",
+     "estado": "no aplicable",
+     "motivo": "El sistema no controla equipos ni procesos físicos.",
+     "motivo_en": "The system does not control equipment or physical processes."
+    },
+    {
+     "es": "Integración segura",
+     "en": "Safe integration",
+     "estado": "no aplicable",
+     "motivo": "No se integra con otros sistemas en esta versión.",
+     "motivo_en": "It is not integrated with other systems in this version."
+    }
+   ],
+   "justificacion_en": "In public health a misread figure can delay an outbreak response; the system must state its limits and fail safely."
+  }
+ ],
+ "objeto_en": "VigiSalud Malaria v1 (static web dashboard published at https://vigisalud-malaria.vercel.app)"
+}

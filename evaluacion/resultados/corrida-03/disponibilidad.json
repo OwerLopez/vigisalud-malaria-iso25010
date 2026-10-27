@@ -1,0 +1,652 @@
+{
+ "base": "https://vigisalud-malaria.vercel.app",
+ "sondeos_totales": 80,
+ "respuestas_200": 80,
+ "disponibilidad_pct": 100,
+ "latencia_mediana_ms": 114,
+ "latencia_p95_ms": 350,
+ "inicio": "2026-10-27T11:14:58.650Z",
+ "fin": "2026-10-27T11:19:56.562Z",
+ "sondeos": [
+  {
+   "ronda": 1,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 376,
+   "error": null,
+   "hora": "2026-10-27T11:14:58.650Z"
+  },
+  {
+   "ronda": 1,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 118,
+   "error": null,
+   "hora": "2026-10-27T11:14:58.769Z"
+  },
+  {
+   "ronda": 1,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 101,
+   "error": null,
+   "hora": "2026-10-27T11:14:58.870Z"
+  },
+  {
+   "ronda": 1,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 99,
+   "error": null,
+   "hora": "2026-10-27T11:14:58.969Z"
+  },
+  {
+   "ronda": 2,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 324,
+   "error": null,
+   "hora": "2026-10-27T11:15:14.297Z"
+  },
+  {
+   "ronda": 2,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 120,
+   "error": null,
+   "hora": "2026-10-27T11:15:14.417Z"
+  },
+  {
+   "ronda": 2,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 101,
+   "error": null,
+   "hora": "2026-10-27T11:15:14.518Z"
+  },
+  {
+   "ronda": 2,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 100,
+   "error": null,
+   "hora": "2026-10-27T11:15:14.618Z"
+  },
+  {
+   "ronda": 3,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 329,
+   "error": null,
+   "hora": "2026-10-27T11:15:29.961Z"
+  },
+  {
+   "ronda": 3,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 119,
+   "error": null,
+   "hora": "2026-10-27T11:15:30.079Z"
+  },
+  {
+   "ronda": 3,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 116,
+   "error": null,
+   "hora": "2026-10-27T11:15:30.195Z"
+  },
+  {
+   "ronda": 3,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 103,
+   "error": null,
+   "hora": "2026-10-27T11:15:30.298Z"
+  },
+  {
+   "ronda": 4,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 334,
+   "error": null,
+   "hora": "2026-10-27T11:15:45.637Z"
+  },
+  {
+   "ronda": 4,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 128,
+   "error": null,
+   "hora": "2026-10-27T11:15:45.765Z"
+  },
+  {
+   "ronda": 4,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 115,
+   "error": null,
+   "hora": "2026-10-27T11:15:45.879Z"
+  },
+  {
+   "ronda": 4,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 103,
+   "error": null,
+   "hora": "2026-10-27T11:15:45.983Z"
+  },
+  {
+   "ronda": 5,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 352,
+   "error": null,
+   "hora": "2026-10-27T11:16:01.347Z"
+  },
+  {
+   "ronda": 5,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 123,
+   "error": null,
+   "hora": "2026-10-27T11:16:01.470Z"
+  },
+  {
+   "ronda": 5,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 120,
+   "error": null,
+   "hora": "2026-10-27T11:16:01.589Z"
+  },
+  {
+   "ronda": 5,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 107,
+   "error": null,
+   "hora": "2026-10-27T11:16:01.696Z"
+  },
+  {
+   "ronda": 6,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 320,
+   "error": null,
+   "hora": "2026-10-27T11:16:17.028Z"
+  },
+  {
+   "ronda": 6,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 113,
+   "error": null,
+   "hora": "2026-10-27T11:16:17.141Z"
+  },
+  {
+   "ronda": 6,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 101,
+   "error": null,
+   "hora": "2026-10-27T11:16:17.242Z"
+  },
+  {
+   "ronda": 6,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 128,
+   "error": null,
+   "hora": "2026-10-27T11:16:17.370Z"
+  },
+  {
+   "ronda": 7,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 319,
+   "error": null,
+   "hora": "2026-10-27T11:16:32.689Z"
+  },
+  {
+   "ronda": 7,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 133,
+   "error": null,
+   "hora": "2026-10-27T11:16:32.822Z"
+  },
+  {
+   "ronda": 7,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 97,
+   "error": null,
+   "hora": "2026-10-27T11:16:32.920Z"
+  },
+  {
+   "ronda": 7,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 97,
+   "error": null,
+   "hora": "2026-10-27T11:16:33.017Z"
+  },
+  {
+   "ronda": 8,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 339,
+   "error": null,
+   "hora": "2026-10-27T11:16:48.363Z"
+  },
+  {
+   "ronda": 8,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 125,
+   "error": null,
+   "hora": "2026-10-27T11:16:48.488Z"
+  },
+  {
+   "ronda": 8,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 111,
+   "error": null,
+   "hora": "2026-10-27T11:16:48.599Z"
+  },
+  {
+   "ronda": 8,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 99,
+   "error": null,
+   "hora": "2026-10-27T11:16:48.699Z"
+  },
+  {
+   "ronda": 9,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 312,
+   "error": null,
+   "hora": "2026-10-27T11:17:04.024Z"
+  },
+  {
+   "ronda": 9,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 113,
+   "error": null,
+   "hora": "2026-10-27T11:17:04.136Z"
+  },
+  {
+   "ronda": 9,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 104,
+   "error": null,
+   "hora": "2026-10-27T11:17:04.240Z"
+  },
+  {
+   "ronda": 9,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 107,
+   "error": null,
+   "hora": "2026-10-27T11:17:04.347Z"
+  },
+  {
+   "ronda": 10,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 315,
+   "error": null,
+   "hora": "2026-10-27T11:17:19.667Z"
+  },
+  {
+   "ronda": 10,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 113,
+   "error": null,
+   "hora": "2026-10-27T11:17:19.780Z"
+  },
+  {
+   "ronda": 10,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 106,
+   "error": null,
+   "hora": "2026-10-27T11:17:19.886Z"
+  },
+  {
+   "ronda": 10,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 96,
+   "error": null,
+   "hora": "2026-10-27T11:17:19.982Z"
+  },
+  {
+   "ronda": 11,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 310,
+   "error": null,
+   "hora": "2026-10-27T11:17:35.304Z"
+  },
+  {
+   "ronda": 11,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 124,
+   "error": null,
+   "hora": "2026-10-27T11:17:35.429Z"
+  },
+  {
+   "ronda": 11,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 100,
+   "error": null,
+   "hora": "2026-10-27T11:17:35.528Z"
+  },
+  {
+   "ronda": 11,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 96,
+   "error": null,
+   "hora": "2026-10-27T11:17:35.624Z"
+  },
+  {
+   "ronda": 12,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 312,
+   "error": null,
+   "hora": "2026-10-27T11:17:50.947Z"
+  },
+  {
+   "ronda": 12,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 140,
+   "error": null,
+   "hora": "2026-10-27T11:17:51.086Z"
+  },
+  {
+   "ronda": 12,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 123,
+   "error": null,
+   "hora": "2026-10-27T11:17:51.209Z"
+  },
+  {
+   "ronda": 12,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 98,
+   "error": null,
+   "hora": "2026-10-27T11:17:51.307Z"
+  },
+  {
+   "ronda": 13,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 316,
+   "error": null,
+   "hora": "2026-10-27T11:18:06.635Z"
+  },
+  {
+   "ronda": 13,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 113,
+   "error": null,
+   "hora": "2026-10-27T11:18:06.748Z"
+  },
+  {
+   "ronda": 13,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 98,
+   "error": null,
+   "hora": "2026-10-27T11:18:06.846Z"
+  },
+  {
+   "ronda": 13,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 105,
+   "error": null,
+   "hora": "2026-10-27T11:18:06.951Z"
+  },
+  {
+   "ronda": 14,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 350,
+   "error": null,
+   "hora": "2026-10-27T11:18:22.315Z"
+  },
+  {
+   "ronda": 14,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 114,
+   "error": null,
+   "hora": "2026-10-27T11:18:22.429Z"
+  },
+  {
+   "ronda": 14,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 101,
+   "error": null,
+   "hora": "2026-10-27T11:18:22.530Z"
+  },
+  {
+   "ronda": 14,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 97,
+   "error": null,
+   "hora": "2026-10-27T11:18:22.627Z"
+  },
+  {
+   "ronda": 15,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 314,
+   "error": null,
+   "hora": "2026-10-27T11:18:37.952Z"
+  },
+  {
+   "ronda": 15,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 118,
+   "error": null,
+   "hora": "2026-10-27T11:18:38.069Z"
+  },
+  {
+   "ronda": 15,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 100,
+   "error": null,
+   "hora": "2026-10-27T11:18:38.170Z"
+  },
+  {
+   "ronda": 15,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 99,
+   "error": null,
+   "hora": "2026-10-27T11:18:38.268Z"
+  },
+  {
+   "ronda": 16,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 314,
+   "error": null,
+   "hora": "2026-10-27T11:18:53.590Z"
+  },
+  {
+   "ronda": 16,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 117,
+   "error": null,
+   "hora": "2026-10-27T11:18:53.707Z"
+  },
+  {
+   "ronda": 16,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 100,
+   "error": null,
+   "hora": "2026-10-27T11:18:53.807Z"
+  },
+  {
+   "ronda": 16,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 99,
+   "error": null,
+   "hora": "2026-10-27T11:18:53.906Z"
+  },
+  {
+   "ronda": 17,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 311,
+   "error": null,
+   "hora": "2026-10-27T11:19:09.218Z"
+  },
+  {
+   "ronda": 17,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 113,
+   "error": null,
+   "hora": "2026-10-27T11:19:09.331Z"
+  },
+  {
+   "ronda": 17,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 101,
+   "error": null,
+   "hora": "2026-10-27T11:19:09.431Z"
+  },
+  {
+   "ronda": 17,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 97,
+   "error": null,
+   "hora": "2026-10-27T11:19:09.529Z"
+  },
+  {
+   "ronda": 18,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 364,
+   "error": null,
+   "hora": "2026-10-27T11:19:24.900Z"
+  },
+  {
+   "ronda": 18,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 123,
+   "error": null,
+   "hora": "2026-10-27T11:19:25.023Z"
+  },
+  {
+   "ronda": 18,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 107,
+   "error": null,
+   "hora": "2026-10-27T11:19:25.130Z"
+  },
+  {
+   "ronda": 18,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 106,
+   "error": null,
+   "hora": "2026-10-27T11:19:25.236Z"
+  },
+  {
+   "ronda": 19,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 322,
+   "error": null,
+   "hora": "2026-10-27T11:19:40.573Z"
+  },
+  {
+   "ronda": 19,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 128,
+   "error": null,
+   "hora": "2026-10-27T11:19:40.702Z"
+  },
+  {
+   "ronda": 19,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 104,
+   "error": null,
+   "hora": "2026-10-27T11:19:40.805Z"
+  },
+  {
+   "ronda": 19,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 109,
+   "error": null,
+   "hora": "2026-10-27T11:19:40.915Z"
+  },
+  {
+   "ronda": 20,
+   "recurso": "/",
+   "estado": 200,
+   "ms": 313,
+   "error": null,
+   "hora": "2026-10-27T11:19:56.233Z"
+  },
+  {
+   "ronda": 20,
+   "recurso": "/data/malaria.json",
+   "estado": 200,
+   "ms": 114,
+   "error": null,
+   "hora": "2026-10-27T11:19:56.347Z"
+  },
+  {
+   "ronda": 20,
+   "recurso": "/data/departamentos.geojson",
+   "estado": 200,
+   "ms": 118,
+   "error": null,
+   "hora": "2026-10-27T11:19:56.465Z"
+  },
+  {
+   "ronda": 20,
+   "recurso": "/calidad.html",
+   "estado": 200,
+   "ms": 98,
+   "error": null,
+   "hora": "2026-10-27T11:19:56.562Z"
+  }
+ ]
+}

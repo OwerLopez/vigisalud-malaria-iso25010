@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Report diagrams</title>
+<style>
+@font-face { font-family: "Plex"; font-weight: 400; src: url("../site/assets/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plex"; font-weight: 600; src: url("../site/assets/fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plex"; font-weight: 700; src: url("../site/assets/fonts/ibm-plex-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "PlexMono"; font-weight: 400; src: url("../site/assets/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); }
+:root { --g: #7A1F2B; --g2: #F6ECEE; --tx: #1F2328; --tx2: #57606A; --ln: #D0D7DE; --az: #2A78D6; --az2: #EAF2FC; --ok: #0CA30C; --ok2: #E7F6E7; --wa: #B7791F; --wa2: #FEF6E4; --cr: #D03B3B; --cr2: #FBEAEA; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; background: #fff; font-family: "Plex", system-ui, sans-serif; color: var(--tx); }
+.diag { width: 1200px; padding: 28px 30px; background: #fff; margin-bottom: 40px; border: 1px solid #fff; }
+h2 { margin: 0 0 4px; font-size: 22px; color: var(--g); }
+p.s { margin: 0 0 22px; color: var(--tx2); font-size: 14px; }
+.row { display: flex; align-items: stretch; gap: 0; }
+.box { border: 1.5px solid var(--ln); border-radius: 12px; padding: 14px 14px; background: #fff; flex: 1; font-size: 13.5px; line-height: 1.4; }
+.box h3 { margin: 0 0 6px; font-size: 15px; }
+.box ul { margin: 6px 0 0; padding-left: 18px; }
+.box li { margin: 2px 0; }
+.box .k { font-family: "PlexMono", monospace; font-size: 12px; color: var(--tx2); }
+.fl { width: 46px; display: flex; align-items: center; justify-content: center; color: var(--tx2); font-size: 26px; flex: 0 0 46px; }
+.g { border-color: var(--g); background: var(--g2); }
+.a { border-color: var(--az); background: var(--az2); }
+.o { border-color: var(--ok); background: var(--ok2); }
+.w { border-color: var(--wa); background: var(--wa2); }
+.r { border-color: var(--cr); background: var(--cr2); }
+.lab { font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; color: var(--tx2); margin: 18px 0 8px; }
+.num { display: inline-flex; width: 26px; height: 26px; border-radius: 50%; background: var(--g); color: #fff; font-weight: 700; align-items: center; justify-content: center; font-size: 14px; margin-right: 6px; }
+.loop { margin-top: 14px; border: 1.5px dashed var(--g); border-radius: 12px; padding: 10px 14px; font-size: 13.5px; color: var(--g); background: #fff; }
+.grid7 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.q { border: 1.5px solid var(--tx); border-radius: 10px; padding: 10px 14px; font-weight: 600; font-size: 14px; background: #fff; text-align: center; }
+.si { color: var(--ok); font-weight: 700; } .no { color: var(--cr); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<div class="diag" id="d-arquitectura">
+  <h2>Product and evaluation architecture</h2>
+  <p class="s">Official data is processed once; the browser only receives aggregates. The evaluation measures the published version and feeds the control board.</p>
+  <div class="lab">Product under evaluation: VigiSalud Malaria</div>
+  <div class="row">
+    <div class="box g"><h3>Official source</h3>datosabiertos.gob.pe · MINSA – CDC Perú<ul><li>2000–2008: week-district aggregate</li><li>2009–2025: one case per row</li><li>ODC-By licence</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Pipeline</h3><span class="k">pipeline/procesar.py</span><ul><li>Validates year, week, age, sex and ICD-10 (B50/B51)</li><li>Recovers the department from the INEI ubigeo</li><li>Aggregates and computes SHA-256</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Published data</h3><span class="k">site/data/*.json</span><ul><li>Aggregates only (no individual records)</li><li>malaria.json · departamentos.geojson</li><li>calidad_datos.json</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box a"><h3>Vercel (CDN)</h3><ul><li>Static HTTPS site</li><li>OWASP headers and CSP</li><li>No own server</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Browser</h3><ul><li>Dashboard ES/EN (D3 v7)</li><li>ISO/IEC 25010 quality board</li></ul></div>
+  </div>
+  <div class="lab">Quality evaluation (ISO/IEC 25040)</div>
+  <div class="row">
+    <div class="box"><h3>Model and metrics</h3><span class="k">modelo.json · metricas.json · requisitos.json</span><ul><li>9 characteristics, 25 GQM metrics</li><li>Thresholds fixed before measuring</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Run NN</h3><span class="k">corrida.mjs</span><ul><li>Playwright (3 browsers) + axe-core</li><li>Lighthouse, Python oracle</li><li>Security, maintainability, availability</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Evidence</h3><span class="k">resultados/corrida-NN/</span><ul><li>JSON per metric, screenshots, traces</li><li>Playwright HTML report</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box"><h3>Consolidation</h3><span class="k">consolidar.mjs</span><ul><li>A, B, X, status and score</li><li>registro.json + incidents</li></ul></div>
+    <div class="fl">→</div>
+    <div class="box o"><h3>Control board</h3><span class="k">calidad.html</span><ul><li>Published with the product</li><li>Excel with formulas</li></ul></div>
+  </div>
+</div>
+
+<div class="diag" id="d-proceso">
+  <h2>Adopted evaluation process (ISO/IEC 25040)</h2>
+  <p class="s">Five activities with inputs, outputs and owners. Every incident is re-measured in the next run.</p>
+  <div class="row">
+    <div class="box g"><span class="num">1</span><b>Establish the requirements</b><ul><li>Purpose and scope</li><li>RF-01…RF-15, RNF-01…RNF-14</li><li>Characteristics and priorities</li></ul><div class="k">Cari Quispe</div></div>
+    <div class="fl">→</div>
+    <div class="box"><span class="num">2</span><b>Specify the evaluation</b><ul><li>25 GQM metrics (A, B, formula)</li><li>Acceptance thresholds</li><li>Scoring scale</li></ul><div class="k">Chura Monroy · Lopez Arela</div></div>
+    <div class="fl">→</div>
+    <div class="box"><span class="num">3</span><b>Design the evaluation</b><ul><li>Procedures and scripts</li><li>Data-collection format</li><li>Failure classification</li></ul><div class="k">Phocco Tapia</div></div>
+    <div class="fl">→</div>
+    <div class="box a"><span class="num">4</span><b>Execute the evaluation</b><ul><li>Runs 01 to 09 in production</li><li>Measurement log</li><li>Incident log</li></ul><div class="k">Whole team</div></div>
+    <div class="fl">→</div>
+    <div class="box o"><span class="num">5</span><b>Conclude the evaluation</b><ul><li>Control board</li><li>Report and decisions</li><li>Lessons learned</li></ul><div class="k">Zegarra Puma</div></div>
+  </div>
+  <div class="loop">↺ Improvement loop: rejected measurement → incident classified by origin → fix to the product, the script or the environment → new run with the same procedure → comparison on the board.</div>
+</div>
+
+<div class="diag" id="d-formato">
+  <h2>Data-collection format: one record per metric and run</h2>
+  <p class="s">The seven blocks are filled automatically from the evidence (registro.json) and mirrored in the Excel “Registro” sheet.</p>
+  <div class="grid7">
+    <div class="box g"><h3>1. Identification</h3><ul><li>Metric ID</li><li>Characteristic</li><li>Sub-characteristic</li></ul></div>
+    <div class="box"><h3>2. Traceability</h3><ul><li>Requirement (RF/RNF)</li><li>Test case or procedure</li><li>Script or tool</li></ul></div>
+    <div class="box"><h3>3. Conditions</h3><ul><li>Run and version</li><li>Date and URL</li><li>Environment and browser</li><li>Data (SHA-256)</li></ul></div>
+    <div class="box a"><h3>4. Measurement</h3><ul><li>A and B (or value)</li><li>Formula</li><li>Result X and unit</li></ul></div>
+    <div class="box"><h3>5. Evaluation</h3><ul><li>Threshold and expected result</li><li>Status (approved, rejected, pending)</li><li>Score and category</li></ul></div>
+    <div class="box"><h3>6. Evidence</h3><ul><li>Run JSON file</li><li>Screenshots and traces</li><li>HTML report</li></ul></div>
+    <div class="box o"><h3>7. Follow-up</h3><ul><li>Owner</li><li>Linked incidents</li><li>Decision and notes</li></ul></div>
+    <div class="box w"><h3>Possible statuses</h3><ul><li><b>Approved</b>: meets the threshold</li><li><b>Rejected</b>: does not meet it</li><li><b>Pending</b>: not measured</li><li><b>Not applicable</b>: justified sub-characteristic</li></ul></div>
+  </div>
+</div>
+
+<div class="diag" id="d-origen">
+  <h2>Classifying a failure by its origin</h2>
+  <p class="s">Before fixing, every failure is reproduced and classified, so the product is not “fixed” when the error was in the test, or the other way round.</p>
+  <div class="q">A test or measurement does not meet expectations</div>
+  <div class="row" style="margin-top:12px; gap:12px">
+    <div class="box r"><h3>Product</h3>The defect reproduces by hand on the published version (figures, UI, accessibility, performance, code).<ul><li>INC-01, 02, 11, 16, 18, 19, 21, 22 interface</li><li>INC-07, 09, 17, 20 code and data</li><li>INC-08, 12 to 15 performance</li></ul><b>Action:</b> fix the product, publish and re-measure.</div>
+    <div class="box w"><h3>Test script</h3>The product behaves correctly; the failure is in the locator, the assertion or how the measurement is recorded.<ul><li>INC-04 ambiguous locator</li><li>INC-05 lost rows</li><li>INC-06, INC-10 false positives</li></ul><b>Action:</b> fix the script without touching the product.</div>
+    <div class="box a"><h3>Infrastructure</h3>The failure depends on the environment: browsers, network, hosting or tooling.<ul><li>INC-03 browsers not installed</li></ul><b>Action:</b> repair the environment and repeat the run with the same procedure.</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+{
+ "escenarios": [
+  {
+   "anio": 2025,
+   "dep": "PERU",
+   "esp": "todas",
+   "casos": 33516,
+   "previo": 33892,
+   "variacion_pct": -1.1,
+   "pf_pct": 15.4,
+   "lider_casos": 33176,
+   "pico_semana": 27,
+   "pico_casos": 1072,
+   "semanas_con_casos": 53,
+   "mujeres": 15107,
+   "hombres": 18409,
+   "distritos_con_casos": 101
+  },
+  {
+   "anio": 2024,
+   "dep": "PERU",
+   "esp": "vivax",
+   "casos": 27756,
+   "previo": 19077,
+   "variacion_pct": 45.5,
+   "pf_pct": 18.1,
+   "lider_casos": 26137,
+   "pico_semana": 20,
+   "pico_casos": 960,
+   "semanas_con_casos": 52,
+   "mujeres": 12172,
+   "hombres": 15584,
+   "distritos_con_casos": 88
+  },
+  {
+   "anio": 2023,
+   "dep": "PERU",
+   "esp": "falciparum",
+   "casos": 3481,
+   "previo": 4170,
+   "variacion_pct": -16.5,
+   "pf_pct": 15.4,
+   "lider_casos": 3455,
+   "pico_semana": 29,
+   "pico_casos": 118,
+   "semanas_con_casos": 52,
+   "mujeres": 1727,
+   "hombres": 1754,
+   "distritos_con_casos": 27
+  },
+  {
+   "anio": 2014,
+   "dep": "LORETO",
+   "esp": "todas",
+   "casos": 61092,
+   "previo": 43739,
+   "variacion_pct": 39.7,
+   "pf_pct": 17.0,
+   "lider_casos": 10693,
+   "pico_semana": 27,
+   "pico_casos": 2283,
+   "semanas_con_casos": 53,
+   "mujeres": 28256,
+   "hombres": 32836,
+   "distritos_con_casos": 49
+  },
+  {
+   "anio": 2022,
+   "dep": "AMAZONAS",
+   "esp": "todas",
+   "casos": 1657,
+   "previo": 659,
+   "variacion_pct": 151.4,
+   "pf_pct": 12.3,
+   "lider_casos": 1647,
+   "pico_semana": 36,
+   "pico_casos": 85,
+   "semanas_con_casos": 52,
+   "mujeres": 793,
+   "hombres": 864,
+   "distritos_con_casos": 3
+  },
+  {
+   "anio": 2019,
+   "dep": "JUNIN",
+   "esp": "falciparum",
+   "casos": 0,
+   "previo": 0,
+   "variacion_pct": null,
+   "pf_pct": 0.0,
+   "lider_casos": 0,
+   "pico_semana": null,
+   "pico_casos": 0,
+   "semanas_con_casos": 0,
+   "mujeres": 0,
+   "hombres": 0,
+   "distritos_con_casos": 0
+  },
+  {
+   "anio": 2005,
+   "dep": "PERU",
+   "esp": "todas",
+   "casos": 87670,
+   "previo": 81765,
+   "variacion_pct": 7.2,
+   "pf_pct": 17.2,
+   "lider_casos": 54286,
+   "pico_semana": 9,
+   "pico_casos": 2710,
+   "semanas_con_casos": 52,
+   "mujeres": null,
+   "hombres": null,
+   "distritos_con_casos": 376
+  },
+  {
+   "anio": 2008,
+   "dep": "TUMBES",
+   "esp": "vivax",
+   "casos": 2793,
+   "previo": 1166,
+   "variacion_pct": 139.5,
+   "pf_pct": 0.0,
+   "lider_casos": 1080,
+   "pico_semana": 17,
+   "pico_casos": 135,
+   "semanas_con_casos": 53,
+   "mujeres": null,
+   "hombres": null,
+   "distritos_con_casos": 11
+  }
+ ],
+ "serie_anual": {
+  "2000": [
+   16650,
+   41059
+  ],
+  "2001": [
+   14072,
+   54205
+  ],
+  "2002": [
+   19244,
+   62919
+  ],
+  "2003": [
+   13706,
+   65775
+  ],
+  "2004": [
+   13802,
+   67963
+  ],
+  "2005": [
+   15091,
+   72579
+  ],
+  "2006": [
+   10147,
+   52396
+  ],
+  "2007": [
+   7770,
+   43483
+  ],
+  "2008": [
+   4529,
+   37292
+  ],
+  "2009": [
+   3909,
+   32972
+  ],
+  "2010": [
+   2303,
+   27036
+  ],
+  "2011": [
+   2639,
+   20420
+  ],
+  "2012": [
+   4002,
+   27702
+  ],
+  "2013": [
+   7929,
+   40949
+  ],
+  "2014": [
+   10416,
+   54823
+  ],
+  "2015": [
+   12654,
+   50526
+  ],
+  "2016": [
+   15296,
+   41218
+  ],
+  "2017": [
+   13166,
+   42029
+  ],
+  "2018": [
+   9437,
+   36006
+  ],
+  "2019": [
+   4715,
+   19598
+  ],
+  "2020": [
+   3196,
+   12612
+  ],
+  "2021": [
+   3583,
+   14490
+  ],
+  "2022": [
+   4170,
+   22855
+  ],
+  "2023": [
+   3481,
+   19077
+  ],
+  "2024": [
+   6136,
+   27756
+  ],
+  "2025": [
+   5176,
+   28340
+  ]
+ }
+}

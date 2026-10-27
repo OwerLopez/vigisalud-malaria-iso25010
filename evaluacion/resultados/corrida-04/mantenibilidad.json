@@ -1,0 +1,1796 @@
+{
+ "fecha": "2026-10-27T11:24:22.484Z",
+ "archivos": [
+  "site\\assets\\app.js",
+  "site\\assets\\calidad.js",
+  "site\\assets\\comun.js",
+  "site\\assets\\i18n.js",
+  "pipeline/procesar.py"
+ ],
+ "lineas_codigo": 1025,
+ "MA01": {
+  "A": 289,
+  "B": 292,
+  "mayores_a_10": [
+   {
+    "archivo": "pipeline\\procesar.py",
+    "linea": 165,
+    "nombre": "main",
+    "cc": 15
+   },
+   {
+    "archivo": "pipeline\\procesar.py",
+    "linea": 113,
+    "nombre": "procesar_b",
+    "cc": 14
+   },
+   {
+    "archivo": "pipeline\\procesar.py",
+    "linea": 82,
+    "nombre": "procesar_a",
+    "cc": 12
+   }
+  ],
+  "cc_media": 1.98
+ },
+ "MA02": {
+  "problemas": 0,
+  "kloc": 1.025,
+  "densidad": 0,
+  "detalle": []
+ },
+ "funciones": [
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 3,
+   "nombre": "Function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 11,
+   "nombre": "Arrow function",
+   "cc": 5
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 12,
+   "nombre": "Arrow function",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 13,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 16,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 18,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 19,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 19,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 21,
+   "nombre": "Async function 'cargar'",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 25,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 25,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 42,
+   "nombre": "Function 'leerParametros'",
+   "cc": 9
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 60,
+   "nombre": "Function 'sincronizarURL'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 66,
+   "nombre": "Function 'poblarFiltros'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 68,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 68,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 71,
+   "nombre": "Function 'llenarDeps'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 73,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 78,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 81,
+   "nombre": "Function 'render'",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 86,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 91,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 106,
+   "nombre": "Function 'leyendas'",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 107,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 107,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 117,
+   "nombre": "Function 'principal'",
+   "cc": 7
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 119,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 119,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 122,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 127,
+   "nombre": "Function 'pico'",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 130,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 133,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 135,
+   "nombre": "Function 'tarjetasKpi'",
+   "cc": 7
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 150,
+   "nombre": "Function 'fraseTendencia'",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 156,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 158,
+   "nombre": "Function 'kpis'",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 162,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 171,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 172,
+   "nombre": "Function 'svgEn'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 178,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 179,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 180,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 180,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 183,
+   "nombre": "Function 'anual'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 185,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 186,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 189,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 190,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 194,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 194,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 199,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 202,
+   "nombre": "Arrow function",
+   "cc": 7
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 211,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 212,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 215,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 217,
+   "nombre": "Function 'barra'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 222,
+   "nombre": "Function 'canal'",
+   "cc": 7
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 225,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 231,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 232,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 234,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 237,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 240,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 244,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 248,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 248,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 248,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 248,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 249,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 249,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 249,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 249,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 250,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 251,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 251,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 251,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 258,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 258,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 263,
+   "nombre": "Arrow function",
+   "cc": 5
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 274,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 276,
+   "nombre": "Arrow function",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 280,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 281,
+   "nombre": "Function 'mapa'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 287,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 293,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 295,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 298,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 301,
+   "nombre": "Function 'ranking'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 302,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 302,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 302,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 307,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 308,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 315,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 316,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 319,
+   "nombre": "Function 'barraH'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 321,
+   "nombre": "Function 'piramide'",
+   "cc": 6
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 332,
+   "nombre": "Arrow function",
+   "cc": 6
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 340,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 344,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 352,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 356,
+   "nombre": "Function 'filasDistritos'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 358,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 359,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 360,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 363,
+   "nombre": "Function 'distritos'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 366,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 367,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 369,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 370,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 371,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 372,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 378,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 381,
+   "nombre": "Function 'exportar'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 390,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 391,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 395,
+   "nombre": "Function 'tarjetasDatos'",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 397,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 398,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 403,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 405,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 405,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 409,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 413,
+   "nombre": "Function 'eventos'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 414,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 415,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 416,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 417,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 421,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 422,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 422,
+   "nombre": "Arrow function",
+   "cc": 5
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 426,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 427,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 429,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 429,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 430,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 431,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\app.js",
+   "linea": 434,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 7,
+   "nombre": "Method 'qLede'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 13,
+   "nombre": "Method 'qMetN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 15,
+   "nombre": "Method 'qReqN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 35,
+   "nombre": "Method 'qLede'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 41,
+   "nombre": "Method 'qMetN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 43,
+   "nombre": "Method 'qReqN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 59,
+   "nombre": "Function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 65,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 66,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 67,
+   "nombre": "Arrow function",
+   "cc": 5
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 69,
+   "nombre": "Async function 'cargar'",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 82,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 90,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 91,
+   "nombre": "Function 'render'",
+   "cc": 7
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 95,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 103,
+   "nombre": "Function 'kpis'",
+   "cc": 6
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 104,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 105,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 106,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 110,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 113,
+   "nombre": "Function 'estadoCar'",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 114,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 114,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 117,
+   "nombre": "Function 'puntajeCar'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 118,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 118,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 118,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 119,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 121,
+   "nombre": "Arrow function",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 121,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 123,
+   "nombre": "Function 'svgEn'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 124,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 126,
+   "nombre": "Function 'estados'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 129,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 131,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 134,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 138,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 142,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 145,
+   "nombre": "Function 'puntajes'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 146,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 150,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 152,
+   "nombre": "Arrow function",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 158,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 163,
+   "nombre": "Function 'caracteristicas'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 164,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 166,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 166,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 174,
+   "nombre": "Function 'noAplicables'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 175,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 178,
+   "nombre": "Function 'metricas'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 180,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 181,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 182,
+   "nombre": "Arrow function",
+   "cc": 8
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 192,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 193,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 194,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 198,
+   "nombre": "Function 'requisitosCob'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 200,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 200,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 201,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 203,
+   "nombre": "Arrow function",
+   "cc": 6
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 210,
+   "nombre": "Function 'incidentes'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 215,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 215,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 218,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 222,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 223,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 226,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 231,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 232,
+   "nombre": "Arrow function",
+   "cc": 9
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 238,
+   "nombre": "Function 'evolucion'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 242,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 244,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 246,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 248,
+   "nombre": "Arrow function",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 251,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 257,
+   "nombre": "Arrow function",
+   "cc": 5
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 262,
+   "nombre": "Function 'proceso'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 263,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 265,
+   "nombre": "Function 'galeria'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 267,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 270,
+   "nombre": "Function 'eventos'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 271,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 272,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 274,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 274,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 275,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 276,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\calidad.js",
+   "linea": 278,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 2,
+   "nombre": "Function",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 4,
+   "nombre": "Method 'get'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 5,
+   "nombre": "Method 'set'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 9,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 10,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 11,
+   "nombre": "Arrow function",
+   "cc": 5
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 13,
+   "nombre": "Arrow function",
+   "cc": 5
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 14,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 14,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 15,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 17,
+   "nombre": "Function 'aplicarTextos'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 19,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 23,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 30,
+   "nombre": "Function 'regionesDesplazables'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 31,
+   "nombre": "Arrow function",
+   "cc": 5
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 39,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 40,
+   "nombre": "Function 'mostrarTip'",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 42,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 51,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 53,
+   "nombre": "Function 'iniciarTema'",
+   "cc": 3
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 57,
+   "nombre": "Arrow function",
+   "cc": 4
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 66,
+   "nombre": "Function 'iniciarIdioma'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 68,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 81,
+   "nombre": "Function 'descargar'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 85,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 88,
+   "nombre": "Function 'seguirSecciones'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 90,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 90,
+   "nombre": "Arrow function",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 91,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\comun.js",
+   "linea": 93,
+   "nombre": "Arrow function",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 11,
+   "nombre": "Method 'avisoFecha'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 12,
+   "nombre": "Method 'avisoParam'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 14,
+   "nombre": "Method 'lede'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 15,
+   "nombre": "Method 'ledeSube'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 15,
+   "nombre": "Method 'ledeBaja'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 19,
+   "nombre": "Method 'kVs'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 24,
+   "nombre": "Method 'canalN'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 26,
+   "nombre": "Method 'lineaAnio'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 27,
+   "nombre": "Method 'terrN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 30,
+   "nombre": "Method 'pobN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 33,
+   "nombre": "Method 'distN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 34,
+   "nombre": "Method 'mostrando'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 54,
+   "nombre": "Method 'avisoFecha'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 55,
+   "nombre": "Method 'avisoParam'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 57,
+   "nombre": "Method 'lede'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 58,
+   "nombre": "Method 'ledeSube'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 58,
+   "nombre": "Method 'ledeBaja'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 62,
+   "nombre": "Method 'kVs'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 67,
+   "nombre": "Method 'canalN'",
+   "cc": 2
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 69,
+   "nombre": "Method 'lineaAnio'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 70,
+   "nombre": "Method 'terrN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 73,
+   "nombre": "Method 'pobN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 76,
+   "nombre": "Method 'distN'",
+   "cc": 1
+  },
+  {
+   "archivo": "site\\assets\\i18n.js",
+   "linea": 77,
+   "nombre": "Method 'mostrando'",
+   "cc": 1
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 165,
+   "nombre": "main",
+   "cc": 15
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 113,
+   "nombre": "procesar_b",
+   "cc": 14
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 82,
+   "nombre": "procesar_a",
+   "cc": 12
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 67,
+   "nombre": "sumar",
+   "cc": 5
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 41,
+   "nombre": "grupo_edad",
+   "cc": 4
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 56,
+   "nombre": "Acumulador",
+   "cc": 4
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 57,
+   "nombre": "Acumulador.__init__",
+   "cc": 1
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 67,
+   "nombre": "Acumulador.sumar",
+   "cc": 5
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 33,
+   "nombre": "sha256",
+   "cc": 2
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 50,
+   "nombre": "codigos_departamento",
+   "cc": 2
+  },
+  {
+   "archivo": "pipeline\\procesar.py",
+   "linea": 57,
+   "nombre": "__init__",
+   "cc": 1
+  }
+ ]
+}

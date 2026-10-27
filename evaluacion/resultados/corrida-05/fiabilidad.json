@@ -1,0 +1,38 @@
+[
+ {
+  "escenario": "datos-404",
+  "mensaje_controlado": true,
+  "cifras_visibles_durante_fallo": 0,
+  "recuperado": true,
+  "evidencia": "evaluacion/resultados/corrida-05/capturas/fi03-datos-404.png",
+  "errores_no_controlados": [],
+  "hora": "2026-10-27T11:34:47.562Z"
+ },
+ {
+  "escenario": "red-caida",
+  "mensaje_controlado": true,
+  "cifras_visibles_durante_fallo": 0,
+  "recuperado": true,
+  "evidencia": "evaluacion/resultados/corrida-05/capturas/fi03-red-caida.png",
+  "errores_no_controlados": [],
+  "hora": "2026-10-27T11:34:48.742Z"
+ },
+ {
+  "escenario": "json-corrupto",
+  "mensaje_controlado": true,
+  "cifras_visibles_durante_fallo": 0,
+  "recuperado": true,
+  "evidencia": "evaluacion/resultados/corrida-05/capturas/fi03-json-corrupto.png",
+  "errores_no_controlados": [],
+  "hora": "2026-10-27T11:34:49.904Z"
+ },
+ {
+  "escenario": "mapa-500",
+  "mensaje_controlado": true,
+  "cifras_visibles_durante_fallo": 0,
+  "recuperado": true,
+  "evidencia": "evaluacion/resultados/corrida-05/capturas/fi03-mapa-500.png",
+  "errores_no_controlados": [],
+  "hora": "2026-10-27T11:34:51.019Z"
+ }
+]

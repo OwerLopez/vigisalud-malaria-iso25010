@@ -1,0 +1,41 @@
+{
+ "nota": "Versión publicada evaluada en cada corrida. El hash corresponde al historial de desarrollo; el repositorio entregado consolida ese historial en un único commit final.",
+ "versiones": {
+  "e2ec6c9": {
+   "version": "v1.0",
+   "descripcion": "Línea base: dashboard y tablero de calidad publicados."
+  },
+  "a63333f": {
+   "version": "v1.1",
+   "descripcion": "Correcciones de la corrida 01: INC-01, INC-02, INC-07, INC-08 e INC-09 (producto), INC-04, INC-05 e INC-06 (scripts) e INC-03 (infraestructura)."
+  },
+  "ecfaca3": {
+   "version": "v1.2",
+   "descripcion": "Correcciones de la corrida 02: INC-11 e INC-12 (producto) e INC-10 (script)."
+  },
+  "1219f7a": {
+   "version": "v1.3",
+   "descripcion": "Correcciones de la corrida 03: INC-13 e INC-14 (producto, rendimiento móvil)."
+  },
+  "ecd9c46": {
+   "version": "v1.4",
+   "descripcion": "Correcciones de la corrida 04: INC-15 (producto, camino crítico de carga)."
+  },
+  "2aca5a2": {
+   "version": "v1.5",
+   "descripcion": "Corrección de la revisión de evidencias de la corrida 05: INC-16 (producto, leyenda)."
+  },
+  "f47b30f": {
+   "version": "v1.6",
+   "descripcion": "Correcciones de la revisión de evidencias de la corrida 06: INC-17 a INC-20 (producto: nombres con Ñ, etiquetas del canal, tarjeta de validación, fecha de descarga)."
+  },
+  "b0ac637": {
+   "version": "v1.7",
+   "descripcion": "Corrección de la revisión de evidencias de la corrida 07: INC-21 (producto, textos en inglés)."
+  },
+  "ed65ebc": {
+   "version": "v1.8",
+   "descripcion": "Corrección de la revisión de evidencias de la corrida 08: INC-22 (producto, prioridad en inglés)."
+  }
+ }
+}

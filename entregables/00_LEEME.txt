@@ -1,0 +1,30 @@
+﻿VIGISALUD MALARIA · EVALUACIÓN DE CALIDAD ISO/IEC 25010
+Calidad de Software · Trabajo Parcial 6 · UNSA · 2026-B
+Docente: Mg. Jesús Martín Silva Fernández
+Equipo: Juan Manuel Cari Quispe, Daniel Wilston Chura Monroy, Ower Frank Lopez Arela, Alejandro Josue Phocco Tapia, Mauricio Eduardo Zegarra Puma
+
+ENLACES
+  Dashboard público ............ https://vigisalud-malaria.vercel.app
+  Tablero de control ISO 25010 .. https://vigisalud-malaria.vercel.app/calidad.html
+  Repositorio (un solo commit) .. https://github.com/OwerLopez/vigisalud-malaria-iso25010
+  Fuente oficial de datos ....... https://www.datosabiertos.gob.pe/dataset/vigilancia-epidemiol%C3%B3gica-de-malaria
+
+CONTENIDO DE LA CARPETA
+  01_Informe_...docx / .pdf ............ Informe completo en español (carátula UNSA, Puntos 1 a 4, resultados, anexos)
+  02_Paper_IEEE_...pdf ................. Artículo en formato IEEE (02_Paper_IEEE_fuente: .tex y figuras)
+  03_Slides_...pptx / .pdf ............. Diapositivas en inglés con notas del orador para cada integrante
+  04_Registro_Metricas_...xlsx ......... Registro y cálculo de métricas con fórmulas (formato de recopilación)
+  05_Codigo_...zip ..................... Código, pruebas, scripts y evidencias de las 9 corridas
+
+RESULTADO
+  25 métricas GQM sobre 9 características ISO/IEC 25010:2023.
+  Métricas aprobadas por corrida: 18 -> 24 -> 24 -> 24 -> 25 -> 25 -> 25 -> 25 -> 25 (de 25).
+  Última corrida (09): 25/25 métricas y 51/51 pruebas automatizadas aprobadas.
+  22 incidentes clasificados por origen: 17 del producto, 4 de scripts de prueba y 1 de infraestructura; todos resueltos y verificados.
+
+REPARTO DE LA EXPOSICIÓN (diapositivas; cada una tiene notas del orador)
+  Juan Manuel Cari Quispe          1-8          Contexto, datos oficiales, la web/dashboard y Punto 1
+  Daniel Wilston Chura Monroy      9-10, 18     Punto 2 (GQM; métricas IF, ED, CO, FL, MA) y resultados entre corridas
+  Ower Frank Lopez Arela           11, 19-20    Punto 2 (métricas CI, FI, SE, SO) y registro de incidentes
+  Alejandro Josue Phocco Tapia     12-14, 21    Punto 3 (proceso, formato, clasificación por origen) y lecciones aprendidas
+  Mauricio Eduardo Zegarra Puma    15-17, 22    Punto 4 (tablero de control y evolución) y conclusiones

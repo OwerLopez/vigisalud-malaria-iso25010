@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tablero de calidad ISO/IEC 25010 · VigiSalud Malaria</title>
+<meta name="description" content="Tablero de control de la evaluación de calidad ISO/IEC 25010 del dashboard VigiSalud Malaria: características, métricas GQM, incidentes y evidencias.">
+<meta name="author" content="Cari Quispe, Chura Monroy, Lopez Arela, Phocco Tapia, Zegarra Puma – UNSA">
+<meta name="theme-color" content="#7A1F2B">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/vendor/d3.v7.9.0.min.js" defer></script>
+<script src="assets/i18n.js" defer></script>
+<script src="assets/comun.js" defer></script>
+<script src="assets/calidad.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+<div class="shell">
+  <aside class="side" aria-label="Navegación">
+    <a class="logo" href="./">
+      <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+      <div><b>VigiSalud</b><small data-i18n="qBrand">Calidad · ISO 25010</small></div>
+    </a>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="#resumen" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span data-i18n="qNavResumen">Resumen</span></a>
+      <a href="#caracteristicas-sec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg><span data-i18n="qNavCar">Características</span></a>
+      <a href="#metricas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg><span data-i18n="qNavMet">Métricas</span></a>
+      <a href="#requisitos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span data-i18n="qNavReq">Requisitos</span></a>
+      <a href="#incidentes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg><span data-i18n="qNavInc">Incidentes</span></a>
+      <a href="#evolucion"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 20h18"/><path d="M4 16l5-5 4 3 7-8"/></svg><span data-i18n="qNavEvo">Evolución</span></a>
+      <a href="#proceso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 12h3M14 12h3"/></svg><span data-i18n="qNavProc">Proceso y evidencias</span></a>
+      <hr>
+      <a href="./"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3c3 4 6 7.2 6 10.5a6 6 0 0 1-12 0C6 10.2 9 7 12 3z"/></svg><span data-i18n="qNavDash">Dashboard de malaria</span></a>
+    </nav>
+    <div class="side-foot"><span>UNSA · 2026-B</span><span data-i18n="curso">Calidad de Software · TP6</span></div>
+  </aside>
+
+  <main id="contenido">
+    <div class="top">
+      <div class="controls">
+        <span class="count" data-i18n="qCorrida">Corrida</span>
+        <div class="seg" role="group" aria-label="Corrida" id="segCorrida"></div>
+      </div>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Idioma / Language" id="langSeg">
+          <button type="button" data-l="es" aria-pressed="true">ES</button>
+          <button type="button" data-l="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="iconbtn" type="button" id="themeBtn" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="state" id="estadoCarga" role="status"><span data-i18n="cargando">Cargando…</span></div>
+      <div class="state card" id="estadoError" role="alert" hidden><b data-i18n="qError">No se pudo cargar la evaluación.</b><button class="btn primary" type="button" id="bReintentar" data-i18n="reintentar">Reintentar</button></div>
+      <div id="app" hidden>
+        <section id="resumen">
+          <div class="hero">
+            <div>
+              <p class="eyebrow" data-i18n="qEyebrow">ISO/IEC 25010:2023 · GQM · ISO/IEC 25040</p>
+              <h1 data-i18n="qTitulo">Tablero de control de calidad del producto</h1>
+              <p class="lede" id="qLede"></p>
+            </div>
+          </div>
+          <div class="grid g-kpi" id="qKpis"></div>
+          <div class="grid g-2">
+            <div class="card"><h3 data-i18n="qEstadoT">Estado de las métricas</h3><p class="note" data-i18n="qEstadoN">Aprobado, rechazado, pendiente y no aplicable, con umbrales fijados antes de medir.</p><div class="chart" id="chEstados" role="img"></div><div class="legend" id="lgEstados"></div></div>
+            <div class="card"><h3 data-i18n="qPuntajeT">Puntaje por característica</h3><p class="note" data-i18n="qPuntajeN">Promedio de los puntajes de sus métricas (0–100) sobre la escala del artículo de referencia.</p><div class="chart" id="chPuntaje" role="img"></div></div>
+          </div>
+        </section>
+        <section id="caracteristicas-sec">
+          <div class="sec-head"><div><h2 data-i18n="qCarT">Características y subcaracterísticas adoptadas</h2><p data-i18n="qCarN">Selección y prioridad justificadas para un sistema de vigilancia en salud pública.</p></div></div>
+          <div class="grid g-3" id="caracteristicas"></div>
+          <div class="card"><h3 data-i18n="qNaT">Subcaracterísticas no aplicables o no evaluadas</h3><div class="tablewrap"><table id="tbNa"><thead><tr><th scope="col" data-i18n="qThCar">Característica</th><th scope="col" data-i18n="qThSub">Subcaracterística</th><th scope="col" data-i18n="qThEstado">Estado</th><th scope="col" data-i18n="qThMotivo">Justificación</th></tr></thead><tbody></tbody></table></div></div>
+        </section>
+        <section id="metricas">
+          <div class="sec-head"><div><h2 data-i18n="qMetT">Métricas y resultados</h2><p id="qMetN"></p></div>
+            <div class="seg" role="group" aria-label="Filtro de estado" id="segEstado"></div></div>
+          <div class="tablewrap" style="max-height:none"><table id="tbMetricas"><thead><tr>
+            <th scope="col">ID</th><th scope="col" data-i18n="qThMetrica">Métrica</th><th scope="col" class="n">A</th><th scope="col" class="n">B</th>
+            <th scope="col" class="n" data-i18n="qThRes">Resultado</th><th scope="col" class="n" data-i18n="qThUmbral">Umbral</th>
+            <th scope="col" class="hide-sm" data-i18n="qThCat">Categoría</th><th scope="col" data-i18n="qThEstado">Estado</th><th scope="col" class="hide-sm" data-i18n="qThEvid">Evidencia</th>
+          </tr></thead><tbody></tbody></table></div>
+        </section>
+        <section id="requisitos">
+          <div class="sec-head"><div><h2 data-i18n="qReqT">Cobertura de requisitos</h2><p id="qReqN"></p></div></div>
+          <div class="card"><div class="grid g-3" id="reqGrid"></div></div>
+        </section>
+        <section id="incidentes">
+          <div class="sec-head"><div><h2 data-i18n="qIncT">Incidentes y su origen</h2><p data-i18n="qIncN">Cada fallo se clasifica según su origen antes de decidir: defecto del producto, error del script de prueba o problema de infraestructura.</p></div></div>
+          <div class="grid g-2">
+            <div class="card"><h3 data-i18n="qIncOrigen">Distribución por origen y estado</h3><div class="chart" id="chIncidentes" role="img"></div><div class="legend" id="lgInc"></div></div>
+            <div class="card"><h3 data-i18n="qIncLista">Registro de incidentes</h3><div class="tablewrap"><table id="tbInc"><thead><tr><th scope="col">ID</th><th scope="col" data-i18n="qThDesc">Descripción</th><th scope="col" data-i18n="qThOrigen">Origen</th><th scope="col" data-i18n="qThEstado">Estado</th></tr></thead><tbody></tbody></table></div></div>
+          </div>
+        </section>
+        <section id="evolucion">
+          <div class="sec-head"><div><h2 data-i18n="qEvoT">Evolución de las corridas</h2><p data-i18n="qEvoN">Cada corrida ejecuta las mismas pruebas sobre la versión publicada; las correcciones entre corridas responden a incidentes registrados.</p></div></div>
+          <div class="grid g-2">
+            <div class="card"><h3 data-i18n="qEvoMet">Métricas por estado en cada corrida</h3><div class="chart" id="chEvo" role="img"></div></div>
+            <div class="card"><h3 data-i18n="qEvoCond">Condiciones de cada corrida</h3><div class="tablewrap"><table id="tbCorridas"><thead><tr><th scope="col" data-i18n="qCorrida">Corrida</th><th scope="col" data-i18n="qThFecha">Fecha</th><th scope="col" data-i18n="qThVersion">Versión</th><th scope="col" class="n" data-i18n="qThPruebas">Pruebas</th></tr></thead><tbody></tbody></table></div></div>
+          </div>
+        </section>
+        <section id="proceso">
+          <div class="sec-head"><div><h2 data-i18n="qProcT">Proceso de evaluación y evidencias</h2><p data-i18n="qProcN">Proceso basado en ISO/IEC 25040; cada medición queda registrada con sus condiciones, evidencia y seguimiento.</p></div></div>
+          <div class="grid g-3" id="pasos"></div>
+          <div class="card"><h3 data-i18n="qEvidT">Evidencias de la última corrida</h3><div class="grid g-3" id="galeria"></div></div>
+        </section>
+        <footer class="foot">
+          <span data-i18n="footL">UNSA · Escuela Profesional de Ingeniería de Sistemas · Calidad de Software, Trabajo Parcial 6 · 2026-B</span>
+          <span>Cari Quispe · Chura Monroy · Lopez Arela · Phocco Tapia · Zegarra Puma</span>
+        </footer>
+      </div>
+    </div>
+  </main>
+</div>
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+</body>
+</html>

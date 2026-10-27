@@ -1,0 +1,38 @@
+[
+ {
+  "vista": "dashboard-es",
+  "reglas_evaluadas": 33,
+  "violaciones": [],
+  "por_impacto": {},
+  "graves": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:23:03.175Z"
+ },
+ {
+  "vista": "dashboard-en",
+  "reglas_evaluadas": 33,
+  "violaciones": [],
+  "por_impacto": {},
+  "graves": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:23:05.476Z"
+ },
+ {
+  "vista": "dashboard-filtrado",
+  "reglas_evaluadas": 33,
+  "violaciones": [],
+  "por_impacto": {},
+  "graves": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:23:07.424Z"
+ },
+ {
+  "vista": "tablero-calidad",
+  "reglas_evaluadas": 26,
+  "violaciones": [],
+  "por_impacto": {},
+  "graves": 0,
+  "ok": true,
+  "hora": "2026-10-27T11:23:09.419Z"
+ }
+]
